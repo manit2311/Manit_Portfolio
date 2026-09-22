@@ -1,0 +1,1019 @@
+/* =========================================================
+   PROFILE PAGE
+   Page 2 ONLY
+========================================================= */
+
+.profile-page {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  background: #fff8df;
+  color: #4a4054;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.profile-intro {
+  position: relative;
+  min-height: 100svh;
+  padding: 90px 7vw 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-intro-content {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(380px, 1fr) minmax(380px, 1fr);
+  align-items: center;
+  gap: 80px;
+}
+
+
+/* COVER PHOTO */
+
+.profile-cover-card {
+  position: relative;
+  width: 100%;
+  max-width: 570px;
+  margin: auto;
+  padding: 12px;
+  background: white;
+  border: 3px solid #4a4054;
+  box-shadow: 12px 12px 0 #f5a6c9;
+  transform: rotate(-2deg);
+}
+
+.profile-window-bar {
+  height: 26px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 8px;
+  background: #eee9ff;
+  border-bottom: 2px solid #4a4054;
+}
+
+.profile-window-bar span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #f5a6c9;
+}
+
+.profile-window-bar span:nth-child(2) {
+  background: #b7a5e8;
+}
+
+.profile-window-bar span:nth-child(3) {
+  background: #9ddbea;
+}
+
+.profile-cover-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* INTRO TEXT */
+
+.profile-intro-text {
+  animation: profileTextPop 0.9s ease-out both;
+}
+
+.profile-level-label {
+  margin: 0 0 18px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  line-height: 1.7;
+  color: #665b70;
+}
+
+.profile-intro-text h1 {
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  font-size: clamp(60px, 7vw, 105px);
+  line-height: 0.88;
+  letter-spacing: -3px;
+  color: #4a4054;
+}
+
+.profile-role {
+  margin: 28px 0 24px;
+  font-family: "Quicksand", sans-serif;
+  font-size: clamp(17px, 1.6vw, 22px);
+  font-weight: 700;
+  line-height: 1.5;
+  color: #665b70;
+}
+
+.profile-intro-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.profile-intro-tags span {
+  padding: 8px 14px;
+  border: 2px solid #4a4054;
+  background: white;
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+}
+
+.profile-intro-tags span:nth-child(1) {
+  background: #e9f9fd;
+}
+
+.profile-intro-tags span:nth-child(2) {
+  background: #eee9ff;
+}
+
+.profile-intro-tags span:nth-child(3) {
+  background: #e8f7ef;
+}
+
+
+/* INTRO DECORATIONS */
+
+.profile-intro-decoration {
+  position: absolute;
+  font-family: "Fredoka", sans-serif;
+  pointer-events: none;
+}
+
+.profile-star {
+  top: 15%;
+  left: 4%;
+  font-size: 38px;
+  color: #f5a6c9;
+  transform: rotate(-15deg);
+}
+
+.profile-plus {
+  right: 6%;
+  top: 23%;
+  font-size: 50px;
+  color: #b7a5e8;
+}
+
+.profile-sparkle {
+  right: 11%;
+  bottom: 23%;
+  font-size: 34px;
+  color: #9ddbea;
+}
+
+.profile-scroll-message {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Press Start 2P", monospace;
+  font-size: 9px;
+  color: #665b70;
+  white-space: nowrap;
+  animation: scrollHint 1.8s ease-in-out infinite;
+}
+
+@keyframes profileTextPop {
+  0% {
+    opacity: 0;
+    transform: translateY(25px) scale(0.96);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes scrollHint {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(6px);
+  }
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+.profile-section {
+  width: min(1240px, calc(100% - 10vw));
+  margin: 0 auto;
+  padding: 110px 0;
+}
+
+.profile-section-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  margin-bottom: 65px;
+}
+
+.profile-section-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: #eee9ff;
+  color: #4a4054;
+  font-family: "Press Start 2P", monospace;
+  font-size: 11px;
+}
+
+.profile-section-heading p {
+  margin: 3px 0 4px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 9px;
+  color: #665b70;
+}
+
+.profile-section-heading h2 {
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  font-size: clamp(42px, 5vw, 70px);
+  line-height: 0.95;
+  color: #4a4054;
+}
+
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.education-section {
+  min-height: 100vh;
+}
+
+
+/* PHOTO AREA */
+
+.education-photos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 28px;
+  margin-bottom: 70px;
+}
+
+.education-photo {
+  width: clamp(190px, 19vw, 255px);
+  aspect-ratio: 3 / 4;
+  padding: 10px;
+  background: white;
+  border: 2px solid #4a4054;
+  box-shadow: 9px 9px 0 rgba(74, 64, 84, 0.13);
+}
+
+.education-photo:nth-child(1) {
+  transform: rotate(-3deg);
+}
+
+.education-photo:nth-child(2) {
+  transform: rotate(3deg);
+}
+
+.education-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* EDUCATION TEXT */
+
+.education-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.education-item {
+  display: flex;
+  gap: 22px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.52);
+  border: 2px solid rgba(74, 64, 84, 0.14);
+  border-radius: 22px;
+}
+
+.education-marker {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: #ffe8f2;
+  font-family: "Press Start 2P", monospace;
+  font-size: 9px;
+}
+
+.education-item-text h3 {
+  margin: 0 0 8px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 26px;
+  line-height: 1.15;
+  color: #4a4054;
+}
+
+.education-date {
+  margin: 0 0 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #665b70;
+}
+
+.education-item ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.education-item li {
+  margin-bottom: 9px;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.education-item li::marker {
+  color: #f5a6c9;
+}
+
+
+/* =========================================================
+   SCHOLARSHIPS
+========================================================= */
+
+.scholarships-section {
+  min-height: 100vh;
+}
+
+.scholarship-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.scholarship-content {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.scholarship-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.scholarship-icon {
+  flex-shrink: 0;
+  color: #f5a6c9;
+  font-size: 27px;
+  line-height: 1;
+}
+
+.scholarship-item h3 {
+  margin: 0 0 6px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 25px;
+  color: #4a4054;
+}
+
+.scholarship-item p {
+  margin: 0 0 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #665b70;
+}
+
+.scholarship-item small {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #665b70;
+}
+
+
+/* SCHOLARSHIP PHOTOS */
+
+.scholarship-photos {
+  position: relative;
+  min-height: 570px;
+}
+
+.scholarship-photo {
+  position: absolute;
+  width: 190px;
+  padding: 9px;
+  background: white;
+  border: 2px solid #4a4054;
+  box-shadow: 8px 8px 0 rgba(74, 64, 84, 0.12);
+}
+
+.scholarship-photo img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.scholarship-photo-1 {
+  top: 10px;
+  right: 15%;
+  transform: rotate(-4deg);
+  border-color: #a9dcc1;
+}
+
+.scholarship-photo-2 {
+  top: 210px;
+  left: 10%;
+  transform: rotate(4deg);
+  border-color: #f5dd83;
+}
+
+.scholarship-photo-3 {
+  right: 0;
+  bottom: 0;
+  transform: rotate(5deg);
+  border-color: #f5a6c9;
+}
+
+
+/* =========================================================
+   PROJECTS
+========================================================= */
+
+.projects-section {
+  min-height: 100vh;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.project-item {
+  display: grid;
+  grid-template-columns: minmax(330px, 0.95fr) minmax(330px, 1fr);
+  gap: 70px;
+  align-items: center;
+}
+
+.project-item-right {
+  grid-template-columns: minmax(330px, 1fr) minmax(330px, 0.95fr);
+}
+
+.project-item-right .project-image {
+  order: 2;
+}
+
+.project-item-right .project-content {
+  order: 1;
+}
+
+
+/* PROJECT IMAGE */
+
+.project-image {
+  position: relative;
+  padding: 12px;
+  background: white;
+  border: 2px solid #4a4054;
+  box-shadow: 11px 11px 0 rgba(74, 64, 84, 0.12);
+}
+
+.project-image img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+
+/* PROJECT TEXT */
+
+.project-type {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  line-height: 1.6;
+  color: #665b70;
+}
+
+.project-content h3 {
+  margin: 0 0 16px;
+  font-family: "Fredoka", sans-serif;
+  font-size: clamp(32px, 3vw, 48px);
+  line-height: 1;
+  color: #4a4054;
+}
+
+.project-content p {
+  margin: 0 0 14px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #665b70;
+}
+
+.project-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  padding: 12px 17px;
+  border: 2px solid #4a4054;
+  background: #ffe8f2;
+  color: #4a4054;
+  text-decoration: none;
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-button:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 0 #4a4054;
+}
+
+.project-button-disabled {
+  cursor: default;
+  background: #eee9ff;
+}
+
+.project-button-disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+
+/* ALGORITHM TAGS */
+
+.algorithm-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.algorithm-tags span {
+  padding: 7px 10px;
+  background: #e9f9fd;
+  border: 1px solid #4a4054;
+  font-family: "Press Start 2P", monospace;
+  font-size: 7px;
+}
+
+
+/* =========================================================
+   DEMO ACCOUNTS
+========================================================= */
+
+.demo-accounts {
+  margin-top: 25px;
+  padding: 18px;
+  background: #fdf1f6;
+  border: 2px dashed #f5a6c9;
+  border-radius: 15px;
+}
+
+.demo-accounts h4 {
+  margin: 0 0 15px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  color: #4a4054;
+}
+
+.demo-account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 12px 0;
+  border-bottom: 1px dashed rgba(74, 64, 84, 0.18);
+}
+
+.demo-account:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.demo-account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.demo-account-info strong {
+  font-family: "Fredoka", sans-serif;
+  font-size: 16px;
+}
+
+.demo-account-info span {
+  font-size: 11px;
+  color: #665b70;
+}
+
+.demo-password {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+.demo-password small {
+  font-family: "Press Start 2P", monospace;
+  font-size: 6px;
+  color: #665b70;
+}
+
+.demo-password code {
+  padding: 5px 7px;
+  border-radius: 6px;
+  background: white;
+  font-family: monospace;
+  font-size: 11px;
+  color: #4a4054;
+}
+
+
+/* =========================================================
+   END
+========================================================= */
+
+.profile-end {
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 160px;
+  text-align: center;
+}
+
+.profile-end > span {
+  font-size: 42px;
+  color: #f5a6c9;
+}
+
+.profile-end p {
+  margin: 20px 0 10px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 9px;
+  color: #665b70;
+}
+
+.profile-end h2 {
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  font-size: clamp(42px, 6vw, 75px);
+  color: #4a4054;
+}
+
+
+/* =========================================================
+   FIXED NAVIGATION
+========================================================= */
+
+.profile-navigation {
+  position: fixed;
+  z-index: 20;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+
+  width: min(500px, calc(100% - 30px));
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  padding: 9px 12px;
+
+  background: rgba(255, 255, 255, 0.92);
+  border: 2px solid #4a4054;
+  border-radius: 18px;
+
+  box-shadow: 5px 5px 0 rgba(74, 64, 84, 0.12);
+
+  backdrop-filter: blur(8px);
+}
+
+.profile-navigation button {
+  border: none;
+  background: transparent;
+  color: #4a4054;
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  padding: 9px;
+}
+
+.profile-navigation button:hover {
+  color: #f5a6c9;
+}
+
+.profile-navigation span {
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+  color: #665b70;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .profile-intro {
+    padding: 70px 5vw 100px;
+  }
+
+  .profile-intro-content {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .profile-cover-card {
+    max-width: 600px;
+  }
+
+  .profile-intro-text {
+    text-align: center;
+  }
+
+  .profile-intro-tags {
+    justify-content: center;
+  }
+
+  .education-content {
+    grid-template-columns: 1fr;
+  }
+
+  .scholarship-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .scholarship-photos {
+    min-height: 530px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .project-item,
+  .project-item-right {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .project-item-right .project-image,
+  .project-item-right .project-content {
+    order: initial;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .profile-intro {
+    min-height: auto;
+    padding: 55px 22px 100px;
+  }
+
+  .profile-intro-content {
+    gap: 40px;
+  }
+
+  .profile-cover-card {
+    width: 94%;
+    padding: 8px;
+  }
+
+  .profile-intro-text h1 {
+    font-size: clamp(48px, 15vw, 75px);
+    letter-spacing: -2px;
+  }
+
+  .profile-role {
+    font-size: 15px;
+  }
+
+  .profile-level-label {
+    font-size: 7px;
+  }
+
+  .profile-scroll-message {
+    position: static;
+    transform: none;
+    margin-top: 55px;
+    text-align: center;
+    white-space: normal;
+    line-height: 1.8;
+  }
+
+  .profile-star {
+    left: 4%;
+    top: 8%;
+    font-size: 25px;
+  }
+
+  .profile-plus {
+    right: 4%;
+    top: 12%;
+    font-size: 32px;
+  }
+
+  .profile-sparkle {
+    right: 7%;
+    bottom: 12%;
+    font-size: 25px;
+  }
+
+
+  /* SECTIONS */
+
+  .profile-section {
+    width: calc(100% - 36px);
+    padding: 80px 0;
+  }
+
+  .profile-section-heading {
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+
+  .profile-section-number {
+    min-width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    font-size: 8px;
+  }
+
+  .profile-section-heading p {
+    font-size: 7px;
+  }
+
+  .profile-section-heading h2 {
+    font-size: 42px;
+  }
+
+
+  /* EDUCATION */
+
+  .education-photos {
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+
+  .education-photo {
+    width: calc(50% - 7px);
+    padding: 7px;
+  }
+
+  .education-content {
+    gap: 20px;
+  }
+
+  .education-item {
+    padding: 20px;
+    gap: 14px;
+    border-radius: 18px;
+  }
+
+  .education-marker {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 7px;
+  }
+
+  .education-item-text h3 {
+    font-size: 21px;
+  }
+
+  .education-date {
+    font-size: 12px;
+  }
+
+  .education-item li {
+    font-size: 13px;
+  }
+
+
+  /* SCHOLARSHIPS */
+
+  .scholarship-content {
+    gap: 30px;
+  }
+
+  .scholarship-item h3 {
+    font-size: 21px;
+  }
+
+  .scholarship-item p,
+  .scholarship-item small {
+    font-size: 13px;
+  }
+
+  .scholarship-photos {
+    min-height: 470px;
+  }
+
+  .scholarship-photo {
+    width: 145px;
+  }
+
+
+  /* PROJECTS */
+
+  .projects-list {
+    gap: 70px;
+  }
+
+  .project-item {
+    gap: 28px;
+  }
+
+  .project-content h3 {
+    font-size: 34px;
+  }
+
+  .project-content p {
+    font-size: 14px;
+  }
+
+  .project-image {
+    padding: 8px;
+  }
+
+
+  /* DEMO ACCOUNTS */
+
+  .demo-account {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .demo-password {
+    align-items: flex-start;
+  }
+
+
+  /* END */
+
+  .profile-end {
+    min-height: 45vh;
+    padding-bottom: 130px;
+  }
+
+  .profile-end h2 {
+    font-size: 43px;
+  }
+
+
+  /* NAV */
+
+  .profile-navigation {
+    bottom: 10px;
+    width: calc(100% - 20px);
+    border-radius: 15px;
+  }
+
+  .profile-navigation button {
+    font-size: 7px;
+  }
+
+  .profile-navigation span {
+    font-size: 7px;
+  }
+}

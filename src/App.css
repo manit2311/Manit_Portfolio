@@ -1,0 +1,154 @@
+/* =========================================================
+   GLOBAL APP
+========================================================= */
+
+.app {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  overflow-x: hidden;
+
+  background: #fff8df;
+}
+
+
+/* =========================================================
+   FLOATING BUBBLES
+========================================================= */
+
+.bubble-field {
+  position: fixed;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  pointer-events: none;
+
+  z-index: 20;
+}
+
+
+.bubble {
+  position: absolute;
+
+  bottom: calc(var(--size) * -1);
+
+  width: var(--size);
+  height: var(--size);
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 30% 25%,
+      rgba(255, 255, 255, 0.85) 0 10%,
+      transparent 12%
+    ),
+    var(--bubble-color);
+
+  border: 1px solid rgba(255, 255, 255, 0.75);
+
+  box-shadow:
+    inset 3px 3px 8px rgba(255, 255, 255, 0.65),
+    inset -3px -4px 8px rgba(74, 64, 84, 0.04),
+    0 5px 18px rgba(74, 64, 84, 0.04);
+
+  opacity: 0.55;
+
+  animation-name: bubbleFloat;
+
+  animation-timing-function: linear;
+
+  animation-iteration-count: infinite;
+}
+
+
+.bubble:nth-child(3n + 1) {
+  --bubble-color: rgba(245, 166, 201, 0.55);
+}
+
+
+.bubble:nth-child(3n + 2) {
+  --bubble-color: rgba(169, 220, 193, 0.55);
+}
+
+
+.bubble:nth-child(3n) {
+  --bubble-color: rgba(242, 190, 215, 0.45);
+}
+
+
+.bubble::after {
+  content: "";
+
+  position: absolute;
+
+  top: 18%;
+  left: 20%;
+
+  width: 18%;
+  height: 18%;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.85);
+}
+
+
+@keyframes bubbleFloat {
+
+  0% {
+    transform:
+      translateY(0)
+      translateX(0)
+      scale(0.9);
+
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.5;
+  }
+
+  50% {
+    transform:
+      translateY(-55vh)
+      translateX(20px)
+      scale(1.05);
+
+    opacity: 0.42;
+  }
+
+  85% {
+    opacity: 0.22;
+  }
+
+  100% {
+    transform:
+      translateY(-115vh)
+      translateX(-20px)
+      scale(1.1);
+
+    opacity: 0;
+  }
+}
+
+
+/* =========================================================
+   KEEP PAGE CONTENT ABOVE BUBBLES
+========================================================= */
+
+.home-page,
+.profile-page,
+.about-page,
+.conclusion-page {
+  position: relative;
+
+  z-index: 1;
+}
