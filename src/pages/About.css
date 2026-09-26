@@ -1544,6 +1544,316 @@
   color: #b7a5e8;
 }
 
+/* =========================================================
+   TALENT — SINGING
+========================================================= */
+
+.talent-card {
+  width: min(1050px, 100%);
+
+  margin: 90px auto 0;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+
+  align-items: center;
+
+  gap: 60px;
+
+  padding: 35px;
+
+  background: #fff;
+
+  border: 2px solid #4a4054;
+  border-radius: 25px;
+
+  box-shadow:
+    10px 10px 0 #eee9ff;
+
+  transform: rotate(1deg);
+}
+
+
+/* PHOTO */
+
+.talent-photo {
+  position: relative;
+
+  padding: 10px;
+
+  background: #fff8df;
+
+  border: 2px solid #4a4054;
+
+  box-shadow:
+    7px 7px 0 rgba(74, 64, 84, 0.12);
+
+  transform: rotate(-3deg);
+}
+
+.talent-photo img {
+  width: 100%;
+
+  display: block;
+
+  aspect-ratio: 3 / 4;
+
+  object-fit: cover;
+}
+
+
+.talent-photo-sticker {
+  position: absolute;
+
+  right: -22px;
+  top: -24px;
+
+  font-size: 38px;
+
+  color: #f5a6c9;
+
+  transform: rotate(12deg);
+}
+
+
+/* TEXT */
+
+.talent-content {
+  padding: 10px;
+}
+
+.talent-content h3 {
+  margin: 17px 0;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: clamp(35px, 4vw, 55px);
+
+  line-height: 1;
+
+  color: #4a4054;
+}
+
+.talent-content p {
+  margin: 0 0 15px;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  color: #665b70;
+}
+
+
+/* TAGS */
+
+.talent-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin-top: 22px;
+}
+
+.talent-tags span {
+  padding: 8px 11px;
+
+  border: 1px solid #4a4054;
+
+  background: #ffe8f2;
+
+  font-family: "Press Start 2P", monospace;
+
+  font-size: 6px;
+}
+
+.talent-tags span:nth-child(2) {
+  background: #eee9ff;
+}
+
+.talent-tags span:nth-child(3) {
+  background: #e8f7ef;
+}
+
+
+/* =========================================
+   SINGING — A LITTLE TALENT
+========================================= */
+
+.talent-card {
+  width: min(1050px, 100%);
+  margin: 90px auto 0;
+
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+
+  align-items: center;
+
+  gap: 55px;
+
+  padding: 30px;
+
+  background: #fff;
+
+  border: 2px solid #4a4054;
+  border-radius: 25px;
+
+  box-shadow: 10px 10px 0 #eee9ff;
+
+  transform: rotate(1deg);
+}
+
+
+/* Landscape singing photo */
+
+.talent-photo {
+  position: relative;
+
+  width: 100%;
+
+  padding: 10px;
+
+  background: #fff8df;
+
+  border: 2px solid #4a4054;
+
+  box-shadow:
+    7px 7px 0 rgba(74, 64, 84, 0.12);
+
+  transform: rotate(-3deg);
+}
+
+.talent-photo img {
+  width: 100%;
+
+  display: block;
+
+  aspect-ratio: 16 / 9;
+
+  object-fit: cover;
+}
+
+
+/* Little music sticker */
+
+.talent-photo-sticker {
+  position: absolute;
+
+  right: -22px;
+  top: -25px;
+
+  font-size: 38px;
+
+  color: #f5a6c9;
+
+  transform: rotate(12deg);
+}
+
+
+/* Text */
+
+.talent-content {
+  padding: 10px;
+}
+
+.talent-content h3 {
+  margin: 17px 0;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: clamp(35px, 4vw, 55px);
+
+  line-height: 1;
+
+  color: #4a4054;
+}
+
+.talent-content p {
+  margin: 0 0 15px;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  color: #665b70;
+}
+
+
+/* Talent tags */
+
+.talent-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin-top: 22px;
+}
+
+.talent-tags span {
+  padding: 8px 11px;
+
+  border: 1px solid #4a4054;
+
+  background: #ffe8f2;
+
+  font-family: "Press Start 2P", monospace;
+
+  font-size: 6px;
+}
+
+.talent-tags span:nth-child(2) {
+  background: #eee9ff;
+}
+
+.talent-tags span:nth-child(3) {
+  background: #e8f7ef;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .talent-card {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    margin-top: 65px;
+
+    padding: 22px;
+
+    transform: none;
+  }
+
+  .talent-photo {
+    width: 100%;
+
+    margin: 0 auto;
+  }
+
+  .talent-photo img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .talent-content {
+    padding: 0;
+  }
+
+  .talent-content h3 {
+    font-size: 36px;
+  }
+
+  .talent-content p {
+    font-size: 14px;
+  }
+}
+
 
 /* =========================================================
    END

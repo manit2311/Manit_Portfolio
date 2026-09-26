@@ -585,98 +585,131 @@ function About({ onNext, onBack }) {
 
 
       {/* =====================================================
-          06 — A LITTLE OF ME
-      ===================================================== */}
+    A LITTLE OF ME
+===================================================== */}
+<section className="little-me-section">
 
-      <section className="little-me-section">
+  <div className="about-section-heading">
 
-        <div className="page-sticker sticker-little-1">✦</div>
-        <div className="page-sticker sticker-little-2">♡</div>
-        <div className="page-sticker sticker-little-3">✧</div>
+    <span className="about-section-number">
+      05
+    </span>
 
-        <div className="about-section-heading">
+    <div>
+      <p>BEYOND THE RESUME</p>
+      <h2>A LITTLE OF ME</h2>
+    </div>
 
-          <span className="about-section-number">
-            06
-          </span>
-
-          <div>
-            <p>BEYOND THE RESUME</p>
-            <h2>A LITTLE OF ME</h2>
-          </div>
-
-        </div>
+  </div>
 
 
-        <div className="little-me-layout">
+  <div className="little-me-layout">
 
-          <div className="little-me-text">
+    {/* PERSONAL SIDE */}
+    <div className="little-me-text">
 
-            <span className="about-mini-label">
-              ✦ JUST ME BEING ME
-            </span>
+      <span className="about-mini-label">
+        ✦ JUST ME BEING ME
+      </span>
 
-            <p>
-              Outside of university and projects, I'm someone who enjoys
-              music, fashion, photography, visual design, discovering new
-              places, and collecting little moments that inspire me.
-            </p>
+      <p>
+        Outside of university and projects, I'm someone who enjoys
+        music, fashion, visual creativity, discovering new things,
+        and simply having little moments that feel like me.
+      </p>
 
-            <p>
-              I like cute things, colorful ideas, good music, and anything
-              that lets me express a little personality.
-            </p>
+      <p>
+        I'm still figuring things out, learning from every experience,
+        and trying to become someone who can combine technology,
+        creativity, and meaningful ideas.
+      </p>
 
-            <p>
-              I'm still figuring out what my future will look like,
-              but I know I want to keep learning, creating, and trying
-              things that genuinely interest me.
-            </p>
+      <div className="little-me-stickers">
+        <span>♡</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>+</span>
+      </div>
 
-            <p className="little-me-ending">
-              Still learning. Still creating. Still figuring it out. ♡
-            </p>
-
-            <div className="little-me-stickers">
-              <span>♡</span>
-              <span>✦</span>
-              <span>✧</span>
-              <span>+</span>
-            </div>
-
-          </div>
+    </div>
 
 
-          <div className="little-me-photos">
+    {/* PERSONAL PHOTOS */}
+    <div className="little-me-photos">
 
-            <div className="little-me-photo little-me-photo-one">
+      <div className="little-me-photo little-me-photo-one">
 
-              <img
-                src="/assets/images/me1.jpg"
-                alt="Somanit"
-              />
+        <img
+          src="/assets/images/me1.jpg"
+          alt="Somanit"
+        />
 
-              <span>♡</span>
-
-            </div>
+      </div>
 
 
-            <div className="little-me-photo little-me-photo-two">
+      <div className="little-me-photo little-me-photo-two">
 
-              <img
-                src="/assets/images/me2.jpg"
-                alt="Somanit"
-              />
+        <img
+          src="/assets/images/me2.jpg"
+          alt="Somanit"
+        />
 
-              <span>✦</span>
+      </div>
 
-            </div>
+    </div>
 
-          </div>
+  </div>
 
-        </div>
 
-      </section>
+  {/* =================================================
+      SINGING / TALENT
+  ================================================= */}
+  <div className="talent-card">
+  <div className="talent-photo">
+    <img
+      src="/assets/images/singing.jpg"
+      alt="Somanit performing as a singer"
+    />
+    <span className="talent-photo-sticker">♫</span>
+  </div>
+
+  <div className="talent-content">
+    <span className="about-mini-label">
+      ✦ A LITTLE TALENT OF MINE
+    </span>
+
+    <h3>
+      I've always been
+      <br />
+      a singer too. 🎤
+    </h3>
+
+    <p>
+      Singing has been one of the creative parts of my life
+      for a long time. During school, I often had opportunities
+      to sing at school events, including graduation ceremonies
+      and other celebrations.
+    </p>
+
+    <p>
+      While studying Chinese, I also got opportunities to perform
+      as a singer. It gave me a chance to explore this talent
+      in a different environment and become more comfortable
+      performing in front of others.
+    </p>
+
+    <div className="talent-tags">
+      <span>SINGING</span>
+      <span>PERFORMING</span>
+      <span>CREATIVE</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
 
       {/* =====================================================
