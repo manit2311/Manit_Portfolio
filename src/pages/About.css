@@ -5,45 +5,58 @@
 .about-page {
   position: relative;
   z-index: 1;
+
   width: 100%;
   min-height: 100vh;
+
   overflow: hidden;
+
   background: #fff8df;
   color: #4a4054;
 }
 
 
 /* =========================================================
-   GLOBAL CUTE STICKERS
+   GLOBAL PAGE STICKERS
 ========================================================= */
 
 .page-sticker {
   position: absolute;
+
   z-index: 2;
+
   pointer-events: none;
 
   font-family: "Fredoka", sans-serif;
 }
 
+
+/* ABOUT */
+
 .sticker-about-1 {
   top: 17%;
   left: 2%;
+
   font-size: 34px;
   color: #f5a6c9;
+
   transform: rotate(-15deg);
 }
 
 .sticker-about-2 {
   top: 38%;
   right: 3%;
+
   font-size: 38px;
   color: #b7a5e8;
+
   transform: rotate(12deg);
 }
 
 .sticker-about-3 {
   bottom: 17%;
   left: 5%;
+
   font-size: 27px;
   color: #9ddbea;
 }
@@ -51,13 +64,37 @@
 .sticker-about-4 {
   bottom: 25%;
   right: 7%;
+
   font-size: 35px;
   color: #f5dd83;
 }
 
+
+/* EXPERIENCE */
+
+.experience-sticker-1 {
+  top: 20%;
+  right: 4%;
+
+  font-size: 34px;
+  color: #f5a6c9;
+}
+
+.experience-sticker-2 {
+  bottom: 15%;
+  left: 4%;
+
+  font-size: 36px;
+  color: #b7a5e8;
+}
+
+
+/* CREATIVE */
+
 .sticker-creative-1 {
   top: 18%;
   left: 1%;
+
   font-size: 30px;
   color: #f5a6c9;
 }
@@ -65,6 +102,7 @@
 .sticker-creative-2 {
   top: 42%;
   right: 1%;
+
   font-size: 38px;
   color: #b7a5e8;
 }
@@ -72,6 +110,7 @@
 .sticker-creative-3 {
   bottom: 12%;
   left: 4%;
+
   font-size: 27px;
   color: #9ddbea;
 }
@@ -79,20 +118,18 @@
 .sticker-creative-4 {
   top: 28%;
   right: 5%;
+
   font-size: 32px;
   color: #f5dd83;
 }
 
-.sticker-creative-5 {
-  bottom: 24%;
-  right: 8%;
-  font-size: 25px;
-  color: #f5a6c9;
-}
+
+/* INTEREST */
 
 .sticker-interest-1 {
   top: 18%;
   left: 1%;
+
   font-size: 28px;
   color: #f5a6c9;
 }
@@ -100,6 +137,7 @@
 .sticker-interest-2 {
   top: 45%;
   right: 2%;
+
   font-size: 38px;
   color: #b7a5e8;
 }
@@ -107,13 +145,18 @@
 .sticker-interest-3 {
   bottom: 13%;
   left: 5%;
+
   font-size: 26px;
   color: #9ddbea;
 }
 
+
+/* PASSIONS */
+
 .sticker-passion-1 {
   top: 15%;
   left: 1%;
+
   font-size: 32px;
   color: #f5a6c9;
 }
@@ -121,6 +164,7 @@
 .sticker-passion-2 {
   top: 38%;
   right: 2%;
+
   font-size: 42px;
   color: #b7a5e8;
 }
@@ -128,27 +172,18 @@
 .sticker-passion-3 {
   bottom: 18%;
   left: 3%;
+
   font-size: 28px;
   color: #9ddbea;
 }
 
-.sticker-passion-4 {
-  top: 25%;
-  right: 8%;
-  font-size: 35px;
-  color: #f5dd83;
-}
 
-.sticker-passion-5 {
-  bottom: 12%;
-  right: 5%;
-  font-size: 27px;
-  color: #f5a6c9;
-}
+/* LITTLE ME */
 
 .sticker-little-1 {
   top: 16%;
   left: 2%;
+
   font-size: 34px;
   color: #f5a6c9;
 }
@@ -156,6 +191,7 @@
 .sticker-little-2 {
   top: 40%;
   right: 2%;
+
   font-size: 40px;
   color: #b7a5e8;
 }
@@ -163,15 +199,9 @@
 .sticker-little-3 {
   bottom: 20%;
   left: 4%;
+
   font-size: 27px;
   color: #9ddbea;
-}
-
-.sticker-little-4 {
-  bottom: 13%;
-  right: 8%;
-  font-size: 35px;
-  color: #f5dd83;
 }
 
 
@@ -181,8 +211,11 @@
 
 .about-section-heading {
   display: flex;
+
   align-items: flex-start;
+
   gap: 22px;
+
   margin-bottom: 60px;
 }
 
@@ -191,13 +224,16 @@
   height: 64px;
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 
   border-radius: 18px;
+
   background: #eee9ff;
 
   font-family: "Press Start 2P", monospace;
+
   font-size: 10px;
 }
 
@@ -205,6 +241,7 @@
   margin: 3px 0 5px;
 
   font-family: "Press Start 2P", monospace;
+
   font-size: 8px;
 
   color: #665b70;
@@ -214,7 +251,9 @@
   margin: 0;
 
   font-family: "Fredoka", sans-serif;
+
   font-size: clamp(45px, 5vw, 70px);
+
   line-height: 0.95;
 
   color: #4a4054;
@@ -222,61 +261,50 @@
 
 .about-mini-label {
   font-family: "Press Start 2P", monospace;
+
   font-size: 7px;
+
   line-height: 1.7;
+
   color: #665b70;
 }
 
 
 /* =========================================================
-   ABOUT ME
+   01 — ABOUT ME
 ========================================================= */
 
 .about-me-section {
   position: relative;
 
   width: min(1180px, calc(100% - 10vw));
+
   min-height: 100vh;
 
   margin: 0 auto;
+
   padding: 110px 0;
 }
 
-.about-me-decoration {
-  position: absolute;
-  pointer-events: none;
-}
-
-.about-me-star {
-  top: 13%;
-  right: 4%;
-
-  font-size: 42px;
-  color: #f5a6c9;
-
-  transform: rotate(-12deg);
-}
-
-.about-me-heart {
-  bottom: 12%;
-  left: 3%;
-
-  font-size: 45px;
-  color: #b7a5e8;
-}
 
 .about-me-card {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+
+  grid-template-columns:
+    0.9fr
+    1.1fr;
 
   align-items: center;
+
   gap: 80px;
 }
+
 
 .about-me-photo {
   padding: 12px;
 
   background: white;
+
   border: 2px solid #4a4054;
 
   box-shadow:
@@ -287,11 +315,14 @@
 
 .about-me-photo img {
   width: 100%;
+
   display: block;
 
   aspect-ratio: 3 / 4;
+
   object-fit: cover;
 }
+
 
 .about-me-text {
   padding: 35px;
@@ -299,6 +330,7 @@
   background: rgba(255, 255, 255, 0.52);
 
   border: 2px dashed #f5a6c9;
+
   border-radius: 24px;
 
   transform: rotate(1deg);
@@ -308,7 +340,9 @@
   margin: 18px 0;
 
   font-family: "Fredoka", sans-serif;
+
   font-size: clamp(32px, 4vw, 54px);
+
   line-height: 1.02;
 }
 
@@ -316,16 +350,20 @@
   margin: 0 0 15px;
 
   font-size: 15px;
+
   line-height: 1.8;
 
   color: #665b70;
 }
 
+
 .about-me-tags {
   display: flex;
+
   flex-wrap: wrap;
 
   gap: 9px;
+
   margin-top: 25px;
 }
 
@@ -333,15 +371,211 @@
   padding: 8px 11px;
 
   border: 1px solid #4a4054;
+
   background: #e9f9fd;
 
   font-family: "Press Start 2P", monospace;
+
   font-size: 6px;
 }
 
 
 /* =========================================================
-   CREATIVE
+   02 — EXPERIENCES
+========================================================= */
+
+.experiences-section {
+  position: relative;
+
+  width: min(1180px, calc(100% - 10vw));
+
+  margin: 0 auto;
+
+  padding: 110px 0;
+}
+
+
+.experiences-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 35px;
+}
+
+
+.experience-card {
+  position: relative;
+
+  padding: 35px;
+
+  background: white;
+
+  border: 2px solid #4a4054;
+
+  border-radius: 24px;
+
+  box-shadow:
+    8px 8px 0 rgba(74, 64, 84, 0.1);
+}
+
+
+.experience-card-work {
+  transform: rotate(-1.2deg);
+
+  box-shadow:
+    8px 8px 0 #ffe8f2;
+}
+
+.experience-card-content {
+  transform: rotate(1.2deg);
+
+  box-shadow:
+    8px 8px 0 #eee9ff;
+}
+
+
+.experience-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 25px;
+}
+
+
+.experience-number {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 14px;
+
+  background: #e9f9fd;
+
+  font-family: "Press Start 2P", monospace;
+
+  font-size: 8px;
+}
+
+
+.experience-type {
+  font-family: "Press Start 2P", monospace;
+
+  font-size: 7px;
+
+  color: #665b70;
+
+  text-align: right;
+}
+
+
+.experience-card h3 {
+  margin: 0 0 5px;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 34px;
+
+  line-height: 1;
+}
+
+
+.experience-card h4 {
+  margin: 0;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 20px;
+
+  color: #f08eb8;
+}
+
+
+.experience-date {
+  margin: 8px 0 22px !important;
+
+  font-family: "Press Start 2P", monospace !important;
+
+  font-size: 7px !important;
+
+  color: #665b70 !important;
+}
+
+
+.experience-card p {
+  margin: 0 0 15px;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color: #665b70;
+}
+
+
+.experience-card ul {
+  margin: 18px 0 0;
+
+  padding-left: 20px;
+}
+
+
+.experience-card li {
+  margin-bottom: 9px;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+
+  color: #665b70;
+}
+
+
+.experience-card li::marker {
+  color: #f5a6c9;
+}
+
+
+.experience-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 25px;
+}
+
+.experience-tags span {
+  padding: 8px 10px;
+
+  border: 1px solid #4a4054;
+
+  border-radius: 10px;
+
+  background: #e8f7ef;
+
+  font-family: "Press Start 2P", monospace;
+
+  font-size: 6px;
+}
+
+
+/* =========================================================
+   03 — CREATIVE
 ========================================================= */
 
 .creative-section {
@@ -350,29 +584,35 @@
   width: min(1240px, calc(100% - 10vw));
 
   margin: 0 auto;
+
   padding: 110px 0;
 }
+
 
 .creative-scrapbook {
   position: relative;
 
-  min-height: 650px;
+  min-height: 850px;
 
   display: grid;
 
   grid-template-columns:
     1fr
-    0.75fr
+    0.85fr
     1fr;
 
   grid-template-rows:
-    auto
-    auto;
+    230px
+    250px
+    230px;
+
+  gap: 25px 35px;
 
   align-items: center;
-
-  gap: 35px;
 }
+
+
+/* ALL PHOTOS */
 
 .creative-photo {
   position: relative;
@@ -389,93 +629,214 @@
 
 .creative-photo img {
   width: 100%;
+
   display: block;
 
-  aspect-ratio: 16 / 10;
   object-fit: cover;
 }
 
+
+/* CREATIVE 1 */
+
 .creative-photo-one {
+  grid-column: 1;
+
+  grid-row: 1;
+
   align-self: start;
+
   transform: rotate(-4deg);
 }
 
+.creative-photo-one img {
+  aspect-ratio: 16 / 10;
+}
+
+
+/* CREATIVE 2 */
+
 .creative-photo-two {
+  grid-column: 3;
+
+  grid-row: 1;
+
   align-self: start;
+
   transform: rotate(3deg);
 }
 
-.creative-photo-three {
-  grid-column: 2 / 3;
-
-  width: 90%;
-
-  justify-self: center;
-
-  transform: rotate(-2deg);
+.creative-photo-two img {
+  aspect-ratio: 16 / 10;
 }
 
-.creative-sticker {
-  position: absolute;
-  font-size: 28px;
-}
 
-.creative-photo-one .creative-sticker {
-  top: -20px;
-  right: -18px;
-  color: #f5a6c9;
-}
-
-.creative-photo-two .creative-sticker {
-  top: -20px;
-  left: -18px;
-  color: #b7a5e8;
-}
-
-.creative-photo-three .creative-sticker {
-  bottom: -20px;
-  right: -15px;
-  color: #9ddbea;
-}
+/* CENTER NOTE */
 
 .creative-center-note {
   grid-column: 1 / 4;
+
   grid-row: 2;
 
-  width: min(520px, 100%);
+  width: min(560px, 100%);
 
   justify-self: center;
 
-  padding: 28px;
+  padding: 30px;
 
   text-align: center;
 
   background: white;
 
   border: 2px dashed #f5a6c9;
+
   border-radius: 22px;
 
   box-shadow:
     7px 7px 0 rgba(74, 64, 84, 0.08);
+
+  z-index: 3;
 }
 
 .creative-center-note > span {
   font-family: "Press Start 2P", monospace;
+
   font-size: 7px;
 }
 
 .creative-center-note p {
-  margin: 14px 0 0;
+  margin: 15px 0 0;
 
   font-size: 14px;
+
   line-height: 1.75;
 
   color: #665b70;
 }
 
+.creative-center-note strong {
+  display: block;
+
+  margin-top: 20px;
+
+  font-family: "Press Start 2P", monospace;
+
+  font-size: 7px;
+
+  line-height: 1.8;
+
+  color: #4a4054;
+}
+
+
+/* CREATIVE 3 */
+
+.creative-photo-three {
+  grid-column: 2;
+
+  grid-row: 3;
+
+  width: 100%;
+
+  align-self: end;
+
+  transform: rotate(-2deg);
+}
+
+.creative-photo-three img {
+  aspect-ratio: 16 / 10;
+}
+
+
+/* NEW SQUARE */
+
+.creative-photo-four {
+  grid-column: 1;
+
+  grid-row: 3;
+
+  width: 62%;
+
+  justify-self: center;
+
+  align-self: end;
+
+  transform: rotate(5deg);
+
+  z-index: 2;
+}
+
+.creative-photo-four img {
+  aspect-ratio: 1 / 1;
+}
+
+
+/* NEW LANDSCAPE */
+
+.creative-photo-five {
+  grid-column: 3;
+
+  grid-row: 3;
+
+  width: 100%;
+
+  align-self: end;
+
+  transform: rotate(4deg);
+
+  z-index: 2;
+}
+
+.creative-photo-five img {
+  aspect-ratio: 16 / 10;
+}
+
+
+/* CREATIVE STICKERS */
+
+.creative-sticker {
+  position: absolute;
+
+  font-size: 27px;
+}
+
+.creative-photo-one .creative-sticker {
+  top: -20px;
+  right: -18px;
+
+  color: #f5a6c9;
+}
+
+.creative-photo-two .creative-sticker {
+  top: -20px;
+  left: -18px;
+
+  color: #b7a5e8;
+}
+
+.creative-photo-three .creative-sticker {
+  bottom: -20px;
+  right: -15px;
+
+  color: #9ddbea;
+}
+
+.creative-photo-four .creative-sticker {
+  top: -18px;
+  right: -16px;
+
+  color: #f5dd83;
+}
+
+.creative-photo-five .creative-sticker {
+  bottom: -20px;
+  right: -16px;
+
+  color: #f5a6c9;
+}
+
 
 /* =========================================================
-   INTERESTS
+   04 — INTERESTS
 ========================================================= */
 
 .interests-section {
@@ -488,10 +849,16 @@
   padding: 110px 0 140px;
 }
 
+
+/* =========================================================
+   INTEREST BUTTONS
+========================================================= */
+
 .interest-tabs {
   display: grid;
 
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns:
+    repeat(3, 1fr);
 
   gap: 16px;
 
@@ -500,26 +867,34 @@
   margin: 0 auto;
 }
 
+
 .interest-tab {
   min-height: 62px;
 
   padding: 10px;
 
   border: 2px solid #4a4054;
+
   border-radius: 14px;
 
   color: #4a4054;
 
   font-family: "Press Start 2P", monospace;
+
   font-size: 8px;
+
   line-height: 1.5;
 
   cursor: pointer;
 
   transition:
     transform 0.2s ease,
-    box-shadow 0.2s ease;
+    box-shadow 0.2s ease,
+    background 0.2s ease;
 }
+
+
+/* DIFFERENT TAB COLORS */
 
 .interest-tab:nth-child(1) {
   background: #e9f9fd;
@@ -545,12 +920,18 @@
   background: #e9f9fd;
 }
 
+
+/* HOVER */
+
 .interest-tab:hover {
   transform: translateY(-4px);
 
   box-shadow:
     5px 5px 0 rgba(74, 64, 84, 0.14);
 }
+
+
+/* SELECTED */
 
 .interest-tab-active {
   background: #f5a6c9 !important;
@@ -561,44 +942,202 @@
     5px 5px 0 #4a4054;
 }
 
-.selected-interest {
-  max-width: 850px;
 
-  margin: 45px auto 0;
+/* =========================================================
+   DISCOVERY BOX
+========================================================= */
 
-  padding: 30px 35px;
+.interest-display-box {
+  position: relative;
 
-  background: white;
+  width: min(850px, 100%);
 
-  border: 2px solid #4a4054;
-  border-radius: 20px;
+  min-height: 155px;
+
+  margin: 38px auto 0;
+
+  padding: 28px 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.72);
+
+  border: 2px dashed #f5a6c9;
+
+  border-radius: 22px;
 
   box-shadow:
-    8px 8px 0 rgba(74, 64, 84, 0.1);
+    7px 7px 0 rgba(74, 64, 84, 0.07);
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease;
+}
+
+
+/* LITTLE ARROW / CONNECTION */
+
+.interest-display-box::before {
+  content: "";
+
+  position: absolute;
+
+  top: -10px;
+
+  left: 50%;
+
+  width: 18px;
+  height: 18px;
+
+  background: #fff8df;
+
+  border-left: 2px dashed #f5a6c9;
+  border-top: 2px dashed #f5a6c9;
+
+  transform:
+    translateX(-50%)
+    rotate(45deg);
+}
+
+
+/* =========================================================
+   BEFORE CLICK
+========================================================= */
+
+.interest-hint {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  animation:
+    hintFloat 2.5s ease-in-out infinite;
+}
+
+
+.interest-hint-icon {
+  font-size: 25px;
+
+  color: #f5a6c9;
+}
+
+
+.interest-hint p {
+  margin: 0;
+
+  font-family: "Press Start 2P", monospace;
+
+  font-size: 8px;
+
+  color: #4a4054;
+}
+
+
+.interest-hint small {
+  font-size: 13px;
+
+  color: #665b70;
+}
+
+
+@keyframes hintFloat {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+
+}
+
+
+/* =========================================================
+   AFTER CLICK
+========================================================= */
+
+.interest-display-active {
+  background: white;
+
+  border-style: solid;
+
+  border-color: #4a4054;
+
+  transform: translateY(-2px);
+}
+
+
+.interest-content {
+  width: 100%;
 
   animation:
     interestAppear 0.35s ease-out;
 }
 
-.selected-interest-title {
-  margin-bottom: 12px;
 
-  font-family: "Fredoka", sans-serif;
-  font-size: 26px;
+.interest-content-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-bottom: 10px;
 }
 
-.selected-interest p {
+
+.interest-content-icon {
+  font-size: 20px;
+
+  color: #f5a6c9;
+}
+
+
+.interest-content-header h3 {
   margin: 0;
 
-  font-size: 15px;
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 27px;
+
+  color: #4a4054;
+}
+
+
+.interest-content p {
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  font-size: 14px;
+
   line-height: 1.8;
 
   color: #665b70;
 }
 
+
 @keyframes interestAppear {
+
   from {
     opacity: 0;
+
     transform:
       translateY(12px)
       scale(0.98);
@@ -606,15 +1145,103 @@
 
   to {
     opacity: 1;
+
     transform:
       translateY(0)
       scale(1);
   }
+
 }
 
 
 /* =========================================================
-   PASSIONS
+   INTEREST DECORATIONS
+========================================================= */
+
+.sticker-interest-1 {
+  top: 18%;
+  left: 1%;
+
+  font-size: 28px;
+
+  color: #f5a6c9;
+}
+
+
+.sticker-interest-2 {
+  top: 45%;
+  right: 2%;
+
+  font-size: 38px;
+
+  color: #b7a5e8;
+}
+
+
+.sticker-interest-3 {
+  bottom: 13%;
+  left: 5%;
+
+  font-size: 26px;
+
+  color: #9ddbea;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .interest-tabs {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 12px;
+  }
+
+
+  .interest-tab {
+    min-height: 58px;
+
+    font-size: 7px;
+  }
+
+
+  .interest-display-box {
+    min-height: 170px;
+
+    margin-top: 32px;
+
+    padding: 25px 20px;
+  }
+
+
+  .interest-hint p {
+    font-size: 7px;
+  }
+
+
+  .interest-hint small {
+    font-size: 12px;
+  }
+
+
+  .interest-content-header h3 {
+    font-size: 23px;
+  }
+
+
+  .interest-content p {
+    font-size: 13px;
+  }
+
+}
+
+
+/* =========================================================
+   05 — PASSIONS
 ========================================================= */
 
 .passions-section {
@@ -626,6 +1253,7 @@
 
   padding: 110px 0;
 }
+
 
 .passions-layout {
   display: grid;
@@ -640,20 +1268,15 @@
 }
 
 
-/* TWO OVERLAPPING LANDSCAPE PHOTOS */
-
 .passions-photos {
   position: relative;
 
   min-height: 470px;
-
-  width: 100%;
 }
+
 
 .passion-photo {
   position: absolute;
-
-  width: 78%;
 
   padding: 10px;
 
@@ -662,8 +1285,9 @@
   border: 2px solid #4a4054;
 
   box-shadow:
-    9px 9px 0 rgba(74, 64, 84, 0.13);
+    8px 8px 0 rgba(74, 64, 84, 0.12);
 }
+
 
 .passion-photo img {
   width: 100%;
@@ -676,38 +1300,36 @@
 }
 
 
-/* BACK PHOTO */
-
 .passion-photo-one {
-  top: 35px;
-  left: 2%;
+  width: 72%;
 
-  transform: rotate(-5deg);
+  top: 20px;
+  left: 4%;
 
-  border-color: #b7a5e8;
+  transform: rotate(-4deg);
+
+  z-index: 2;
 }
 
 
-/* FRONT PHOTO */
-
 .passion-photo-two {
-  top: 155px;
-  right: 0;
+  width: 65%;
+
+  right: 2%;
+  bottom: 20px;
 
   transform: rotate(5deg);
 
-  border-color: #f5a6c9;
+  z-index: 3;
 }
 
-
-/* PHOTO STICKERS */
 
 .passion-photo-sticker {
   position: absolute;
 
-  font-family: "Fredoka", sans-serif;
+  font-size: 30px;
 
-  font-size: 32px;
+  z-index: 5;
 }
 
 .passion-star {
@@ -715,33 +1337,26 @@
   right: 8%;
 
   color: #f5dd83;
-
-  transform: rotate(12deg);
 }
 
 .passion-heart {
-  bottom: 18px;
+  bottom: 0;
   left: 5%;
 
   color: #f5a6c9;
-
-  transform: rotate(-10deg);
 }
 
 
-/* PASSION TEXT */
-
 .passions-text {
-  padding: 30px;
+  padding: 35px;
 
   background: rgba(255, 255, 255, 0.52);
 
-  border-radius: 22px;
-
   border: 2px dashed #b7a5e8;
 
-  transform: rotate(1deg);
+  border-radius: 22px;
 }
+
 
 .passions-text h3 {
   margin: 17px 0;
@@ -752,6 +1367,7 @@
 
   line-height: 1.02;
 }
+
 
 .passions-text p {
   margin: 0 0 15px;
@@ -765,7 +1381,7 @@
 
 
 /* =========================================================
-   A LITTLE OF ME
+   06 — A LITTLE OF ME
 ========================================================= */
 
 .little-me-section {
@@ -777,6 +1393,7 @@
 
   padding: 110px 0;
 }
+
 
 .little-me-layout {
   display: grid;
@@ -790,6 +1407,7 @@
   align-items: center;
 }
 
+
 .little-me-text {
   position: relative;
 
@@ -798,6 +1416,7 @@
   background: white;
 
   border: 2px solid #4a4054;
+
   border-radius: 22px;
 
   box-shadow:
@@ -805,6 +1424,7 @@
 
   transform: rotate(-1deg);
 }
+
 
 .little-me-text p {
   margin: 17px 0;
@@ -816,6 +1436,16 @@
   color: #665b70;
 }
 
+
+.little-me-ending {
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 18px !important;
+
+  color: #4a4054 !important;
+}
+
+
 .little-me-stickers {
   display: flex;
 
@@ -825,6 +1455,7 @@
 
   font-size: 25px;
 }
+
 
 .little-me-stickers span:nth-child(1) {
   color: #f5a6c9;
@@ -843,18 +1474,17 @@
 }
 
 
-/* LANDSCAPE LITTLE-ME PHOTOS */
-
 .little-me-photos {
   position: relative;
 
-  min-height: 430px;
+  min-height: 480px;
 }
+
 
 .little-me-photo {
   position: absolute;
 
-  width: 78%;
+  width: 230px;
 
   padding: 9px;
 
@@ -866,6 +1496,7 @@
     8px 8px 0 rgba(74, 64, 84, 0.12);
 }
 
+
 .little-me-photo img {
   width: 100%;
 
@@ -876,17 +1507,17 @@
   object-fit: cover;
 }
 
+
 .little-me-photo span {
   position: absolute;
 
-  font-family: "Fredoka", sans-serif;
-
-  font-size: 27px;
+  font-size: 25px;
 }
+
 
 .little-me-photo-one {
   top: 10px;
-  left: 3%;
+  left: 12%;
 
   transform: rotate(-5deg);
 }
@@ -898,9 +1529,10 @@
   color: #f5a6c9;
 }
 
+
 .little-me-photo-two {
-  right: 0;
-  bottom: 10px;
+  right: 3%;
+  bottom: 0;
 
   transform: rotate(5deg);
 }
@@ -933,11 +1565,13 @@
   text-align: center;
 }
 
+
 .about-end > span {
   font-size: 42px;
 
   color: #f5a6c9;
 }
+
 
 .about-end p {
   margin: 18px 0;
@@ -948,6 +1582,7 @@
 
   color: #665b70;
 }
+
 
 .about-end h2 {
   margin: 0;
@@ -963,7 +1598,7 @@
 
 
 /* =========================================================
-   NAVIGATION
+   BACK / NEXT
 ========================================================= */
 
 .about-navigation {
@@ -998,6 +1633,7 @@
   backdrop-filter: blur(8px);
 }
 
+
 .about-navigation button {
   border: none;
 
@@ -1014,9 +1650,11 @@
   cursor: pointer;
 }
 
+
 .about-navigation button:hover {
   color: #f5a6c9;
 }
+
 
 .about-navigation span {
   font-family: "Press Start 2P", monospace;
@@ -1039,8 +1677,15 @@
 
   .about-me-photo {
     width: min(430px, 85%);
+
     margin: 0 auto;
   }
+
+
+  .experiences-grid {
+    grid-template-columns: 1fr;
+  }
+
 
   .passions-layout {
     grid-template-columns: 1fr;
@@ -1048,21 +1693,23 @@
 
   .passions-photos {
     width: min(600px, 100%);
+
     margin: 0 auto;
   }
 
-  .passions-text {
-    width: 100%;
-  }
 
   .little-me-layout {
     grid-template-columns: 1fr;
   }
 
   .little-me-photos {
-    width: min(600px, 100%);
+    width: 100%;
+
+    max-width: 550px;
+
     margin: 0 auto;
   }
+
 }
 
 
@@ -1073,6 +1720,7 @@
 @media (max-width: 700px) {
 
   .about-me-section,
+  .experiences-section,
   .creative-section,
   .interests-section,
   .passions-section,
@@ -1081,17 +1729,11 @@
   }
 
 
-  /* STICKERS */
-
-  .page-sticker {
-    font-size: 22px;
-  }
-
-
   /* HEADINGS */
 
   .about-section-heading {
     gap: 14px;
+
     margin-bottom: 40px;
   }
 
@@ -1128,45 +1770,100 @@
   }
 
 
+  /* EXPERIENCES */
+
+  .experience-card {
+    padding: 25px;
+
+    transform: none;
+  }
+
+  .experience-card h3 {
+    font-size: 29px;
+  }
+
+  .experience-card li {
+    font-size: 12px;
+  }
+
+
   /* CREATIVE */
 
   .creative-scrapbook {
-    display: flex;
+    display: grid;
 
-    flex-direction: column;
+    min-height: 950px;
 
-    min-height: auto;
+    grid-template-columns:
+      1fr
+      1fr;
 
-    gap: 30px;
+    grid-template-rows:
+      190px
+      auto
+      190px
+      180px
+      190px;
+
+    gap: 22px;
   }
 
-  .creative-photo {
-    width: 92%;
-  }
 
   .creative-photo-one {
-    align-self: flex-start;
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 100%;
   }
+
 
   .creative-photo-two {
-    align-self: flex-end;
+    grid-column: 2;
+    grid-row: 1;
+
+    width: 100%;
   }
 
-  .creative-photo-three {
-    align-self: center;
-
-    width: 92%;
-  }
 
   .creative-center-note {
-    order: 4;
+    grid-column: 1 / 3;
+    grid-row: 2;
+
+    width: 100%;
+  }
+
+
+  .creative-photo-three {
+    grid-column: 2;
+    grid-row: 3;
+
+    width: 100%;
+  }
+
+
+  .creative-photo-four {
+    grid-column: 1;
+    grid-row: 3;
+
+    width: 75%;
+  }
+
+
+  .creative-photo-five {
+    grid-column: 1 / 3;
+    grid-row: 4;
+
+    width: 80%;
+
+    justify-self: center;
   }
 
 
   /* INTERESTS */
 
   .interest-tabs {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns:
+      repeat(2, 1fr);
 
     gap: 12px;
   }
@@ -1176,6 +1873,7 @@
 
     font-size: 7px;
   }
+
 
   .selected-interest {
     padding: 25px 22px;
@@ -1193,44 +1891,30 @@
   /* PASSIONS */
 
   .passions-photos {
-    min-height: 340px;
-  }
-
-  .passion-photo {
-    width: 82%;
+    min-height: 390px;
   }
 
   .passion-photo-one {
-    top: 15px;
-    left: 0;
+    width: 80%;
   }
 
   .passion-photo-two {
-    top: 115px;
-    right: 0;
+    width: 72%;
   }
 
 
   /* LITTLE ME */
 
   .little-me-photos {
-    min-height: 330px;
+    min-height: 400px;
   }
 
   .little-me-photo {
-    width: 82%;
-  }
-
-  .little-me-photo-one {
-    left: 0;
-  }
-
-  .little-me-photo-two {
-    right: 0;
+    width: 170px;
   }
 
 
-  /* NAV */
+  /* NAVIGATION */
 
   .about-navigation {
     bottom: 10px;
@@ -1247,4 +1931,5 @@
   .about-navigation span {
     font-size: 7px;
   }
+
 }

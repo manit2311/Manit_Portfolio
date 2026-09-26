@@ -45,7 +45,7 @@ function About({ onNext, onBack }) {
     <section className="about-page">
 
       {/* =====================================================
-          ABOUT ME
+          01 — ABOUT ME
       ===================================================== */}
 
       <section className="about-me-section">
@@ -54,14 +54,6 @@ function About({ onNext, onBack }) {
         <div className="page-sticker sticker-about-2">♡</div>
         <div className="page-sticker sticker-about-3">✧</div>
         <div className="page-sticker sticker-about-4">+</div>
-
-        <div className="about-me-decoration about-me-star">
-          ✦
-        </div>
-
-        <div className="about-me-decoration about-me-heart">
-          ♡
-        </div>
 
         <div className="about-section-heading">
           <span className="about-section-number">01</span>
@@ -72,6 +64,7 @@ function About({ onNext, onBack }) {
           </div>
         </div>
 
+
         <div className="about-me-card">
 
           <div className="about-me-photo">
@@ -80,6 +73,7 @@ function About({ onNext, onBack }) {
               alt="Somanit"
             />
           </div>
+
 
           <div className="about-me-text">
 
@@ -122,7 +116,143 @@ function About({ onNext, onBack }) {
 
 
       {/* =====================================================
-          CREATIVE SIDE
+          02 — EXPERIENCES
+      ===================================================== */}
+
+      <section className="experiences-section">
+
+        <div className="page-sticker experience-sticker-1">✦</div>
+        <div className="page-sticker experience-sticker-2">♡</div>
+
+        <div className="about-section-heading">
+          <span className="about-section-number">02</span>
+
+          <div>
+            <p>WHAT I'VE EXPERIENCED</p>
+            <h2>EXPERIENCES</h2>
+          </div>
+        </div>
+
+
+        <div className="experiences-grid">
+
+          {/* WORK EXPERIENCE */}
+
+          <article className="experience-card experience-card-work">
+
+            <div className="experience-card-top">
+              <span className="experience-number">
+                01
+              </span>
+
+              <span className="experience-type">
+                WORK EXPERIENCE
+              </span>
+            </div>
+
+            <h3>
+              Beauty Consultant
+            </h3>
+
+            <h4>
+              Lush Skin
+            </h4>
+
+            <p className="experience-date">
+              March 2026 – August 2026
+            </p>
+
+            <p>
+              Worked with Korean skincare, Cambodian local brands,
+              and trending beauty products while communicating directly
+              with customers and helping them find products suitable
+              for their concerns.
+            </p>
+
+            <ul>
+              <li>
+                Recommended skincare products based on customers'
+                needs and preferences.
+              </li>
+
+              <li>
+                Explained product ingredients, functions, and benefits.
+              </li>
+
+              <li>
+                Communicated with both local and international customers.
+              </li>
+
+              <li>
+                Assisted customers with product selection and questions.
+              </li>
+
+              <li>
+                Supported product promotion and appeared in promotional
+                content.
+              </li>
+
+              <li>
+                Helped manage product stock, including stock-in
+                and stock-out.
+              </li>
+            </ul>
+
+          </article>
+
+
+          {/* CONTENT EXPERIENCE */}
+
+          <article className="experience-card experience-card-content">
+
+            <div className="experience-card-top">
+              <span className="experience-number">
+                02
+              </span>
+
+              <span className="experience-type">
+                CONTENT &amp; CREATIVE
+              </span>
+            </div>
+
+            <h3>
+              Personal Content Creation
+            </h3>
+
+            <p>
+              I enjoy creating casual educational and lifestyle content
+              using CapCut, Canva, photography, and social media platforms.
+            </p>
+
+            <p>
+              My experience includes creating skincare-related content,
+              photo strips, makeup routines, unboxing content, and
+              short-form videos.
+            </p>
+
+            <p>
+              These experiences helped me become more comfortable with
+              visual storytelling, presenting information, and
+              communicating ideas in a way that feels natural to younger
+              audiences.
+            </p>
+
+            <div className="experience-tags">
+              <span>CAPCUT</span>
+              <span>CANVA</span>
+              <span>PHOTOGRAPHY</span>
+              <span>SOCIAL MEDIA</span>
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      {/* =====================================================
+          03 — CREATIVE SIDE
       ===================================================== */}
 
       <section className="creative-section">
@@ -131,10 +261,9 @@ function About({ onNext, onBack }) {
         <div className="page-sticker sticker-creative-2">♡</div>
         <div className="page-sticker sticker-creative-3">✧</div>
         <div className="page-sticker sticker-creative-4">+</div>
-        <div className="page-sticker sticker-creative-5">⋆</div>
 
         <div className="about-section-heading">
-          <span className="about-section-number">02</span>
+          <span className="about-section-number">03</span>
 
           <div>
             <p>THE OTHER SIDE OF ME</p>
@@ -142,46 +271,105 @@ function About({ onNext, onBack }) {
           </div>
         </div>
 
+
         <div className="creative-scrapbook">
+
+          {/* CREATIVE 1 — LANDSCAPE */}
 
           <div className="creative-photo creative-photo-one">
             <img
               src="/assets/images/creative1.jpg"
-              alt="Somanit's creative side"
+              alt="Somanit's creative work"
             />
-            <span className="creative-sticker">✦</span>
+
+            <span className="creative-sticker">
+              ✦
+            </span>
           </div>
 
-          <div className="creative-center-note">
 
-            <span>♡ MY CREATIVE SIDE ♡</span>
-
-            <p>
-              Where my analytical side meets my imagination.
-            </p>
-
-            <p>
-              I love visual creativity, storytelling, design,
-              and finding little ways to make technical ideas
-              feel more personal and interesting.
-            </p>
-
-          </div>
+          {/* CREATIVE 2 — LANDSCAPE */}
 
           <div className="creative-photo creative-photo-two">
             <img
               src="/assets/images/creative2.jpg"
-              alt="Somanit's creative side"
+              alt="Somanit's creative work"
             />
-            <span className="creative-sticker">♡</span>
+
+            <span className="creative-sticker">
+              ♡
+            </span>
           </div>
+
+
+          {/* CENTER TEXT */}
+
+          <div className="creative-center-note">
+
+            <span>
+              ♡ MY CREATIVE SIDE ♡
+            </span>
+
+            <p>
+              Creativity is the space where I can experiment
+              without having to find one correct answer.
+            </p>
+
+            <p>
+              I enjoy photography, visual design, storytelling,
+              and creating little things that reflect my personality.
+              Sometimes it is a website, sometimes a photo, sometimes
+              a random idea that I just want to turn into something real.
+            </p>
+
+            <strong>
+              TECHNOLOGY GIVES ME THE TOOLS.
+              <br />
+              CREATIVITY GIVES ME THE WAY TO USE THEM.
+            </strong>
+
+          </div>
+
+
+          {/* CREATIVE 3 — LANDSCAPE */}
 
           <div className="creative-photo creative-photo-three">
             <img
               src="/assets/images/creative3.jpg"
-              alt="Somanit's creative side"
+              alt="Somanit's creative work"
             />
-            <span className="creative-sticker">✧</span>
+
+            <span className="creative-sticker">
+              ✧
+            </span>
+          </div>
+
+
+          {/* CREATIVE 4 — NEW SQUARE */}
+
+          <div className="creative-photo creative-photo-four">
+            <img
+              src="/assets/images/creative4.jpg"
+              alt="Somanit's creative moment"
+            />
+
+            <span className="creative-sticker">
+              +
+            </span>
+          </div>
+
+
+          {/* CREATIVE 5 — NEW LANDSCAPE */}
+
+          <div className="creative-photo creative-photo-five">
+            <img
+              src="/assets/images/creative5.jpg"
+              alt="Somanit's creative moment"
+            />
+
+            <span className="creative-sticker">
+              ♡
+            </span>
           </div>
 
         </div>
@@ -190,66 +378,123 @@ function About({ onNext, onBack }) {
 
 
       {/* =====================================================
-          INTERESTS
-      ===================================================== */}
+    04 — INTERESTS
+===================================================== */}
 
-      <section className="interests-section">
+<section className="interests-section">
 
-        <div className="page-sticker sticker-interest-1">✦</div>
-        <div className="page-sticker sticker-interest-2">♡</div>
-        <div className="page-sticker sticker-interest-3">✧</div>
+  <div className="page-sticker sticker-interest-1">
+    ✦
+  </div>
 
-        <div className="about-section-heading">
+  <div className="page-sticker sticker-interest-2">
+    ♡
+  </div>
 
-          <span className="about-section-number">
-            03
+  <div className="page-sticker sticker-interest-3">
+    ✧
+  </div>
+
+
+  <div className="about-section-heading">
+
+    <span className="about-section-number">
+      04
+    </span>
+
+    <div>
+      <p>THINGS THAT KEEP ME CURIOUS</p>
+      <h2>INTERESTS</h2>
+    </div>
+
+  </div>
+
+
+  {/* INTEREST BUTTONS */}
+
+  <div className="interest-tabs">
+
+    {interests.map((interest) => (
+
+      <button
+        key={interest.id}
+        type="button"
+        className={`interest-tab ${
+          activeInterest?.id === interest.id
+            ? "interest-tab-active"
+            : ""
+        }`}
+        onClick={() =>
+          setSelectedInterest(interest.id)
+        }
+      >
+        {interest.label}
+      </button>
+
+    ))}
+
+  </div>
+
+
+  {/* DISCOVERY BOX */}
+
+  <div
+    className={`interest-display-box ${
+      activeInterest
+        ? "interest-display-active"
+        : ""
+    }`}
+  >
+
+    {!activeInterest ? (
+
+      <div className="interest-hint">
+
+        <span className="interest-hint-icon">
+          ✦
+        </span>
+
+        <p>
+          CLICK AN INTEREST
+        </p>
+
+        <small>
+          Discover a little more about me ♡
+        </small>
+
+      </div>
+
+    ) : (
+
+      <div className="interest-content">
+
+        <div className="interest-content-header">
+
+          <span className="interest-content-icon">
+            ✦
           </span>
 
-          <div>
-            <p>THINGS THAT KEEP ME CURIOUS</p>
-            <h2>INTERESTS</h2>
-          </div>
+          <h3>
+            {activeInterest.label}
+          </h3>
 
         </div>
 
-        <div className="interest-tabs">
+        <p>
+          {activeInterest.text}
+        </p>
 
-          {interests.map((interest) => (
-            <button
-              key={interest.id}
-              type="button"
-              className={`interest-tab ${
-                activeInterest?.id === interest.id
-                  ? "interest-tab-active"
-                  : ""
-              }`}
-              onClick={() => setSelectedInterest(interest.id)}
-            >
-              {interest.label}
-            </button>
-          ))}
+      </div>
 
-        </div>
+    )}
 
-        {activeInterest && (
-          <div className="selected-interest">
+  </div>
 
-            <div className="selected-interest-title">
-              ✦ {activeInterest.label}
-            </div>
-
-            <p>
-              {activeInterest.text}
-            </p>
-
-          </div>
-        )}
-
-      </section>
+</section>
 
 
       {/* =====================================================
-          PASSIONS
+          05 — PASSIONS
       ===================================================== */}
 
       <section className="passions-section">
@@ -257,13 +502,11 @@ function About({ onNext, onBack }) {
         <div className="page-sticker sticker-passion-1">✦</div>
         <div className="page-sticker sticker-passion-2">♡</div>
         <div className="page-sticker sticker-passion-3">✧</div>
-        <div className="page-sticker sticker-passion-4">+</div>
-        <div className="page-sticker sticker-passion-5">⋆</div>
 
         <div className="about-section-heading">
 
           <span className="about-section-number">
-            04
+            05
           </span>
 
           <div>
@@ -275,8 +518,6 @@ function About({ onNext, onBack }) {
 
 
         <div className="passions-layout">
-
-          {/* OVERLAPPING LANDSCAPE PHOTOS */}
 
           <div className="passions-photos">
 
@@ -329,6 +570,13 @@ function About({ onNext, onBack }) {
               that there is much more to life than just studying technology.
             </p>
 
+            <p>
+              I want to keep exploring the connection between
+              <strong>
+                {" "}technology, creativity, culture, and human experiences.
+              </strong>
+            </p>
+
           </div>
 
         </div>
@@ -337,7 +585,7 @@ function About({ onNext, onBack }) {
 
 
       {/* =====================================================
-          A LITTLE OF ME
+          06 — A LITTLE OF ME
       ===================================================== */}
 
       <section className="little-me-section">
@@ -345,12 +593,11 @@ function About({ onNext, onBack }) {
         <div className="page-sticker sticker-little-1">✦</div>
         <div className="page-sticker sticker-little-2">♡</div>
         <div className="page-sticker sticker-little-3">✧</div>
-        <div className="page-sticker sticker-little-4">+</div>
 
         <div className="about-section-heading">
 
           <span className="about-section-number">
-            05
+            06
           </span>
 
           <div>
@@ -371,14 +618,23 @@ function About({ onNext, onBack }) {
 
             <p>
               Outside of university and projects, I'm someone who enjoys
-              music, fashion, visual creativity, discovering new things,
-              and simply having little moments that feel like me.
+              music, fashion, photography, visual design, discovering new
+              places, and collecting little moments that inspire me.
             </p>
 
             <p>
-              I'm still figuring things out, learning from every
-              experience, and trying to become someone who can combine
-              technology, creativity, and meaningful ideas.
+              I like cute things, colorful ideas, good music, and anything
+              that lets me express a little personality.
+            </p>
+
+            <p>
+              I'm still figuring out what my future will look like,
+              but I know I want to keep learning, creating, and trying
+              things that genuinely interest me.
+            </p>
+
+            <p className="little-me-ending">
+              Still learning. Still creating. Still figuring it out. ♡
             </p>
 
             <div className="little-me-stickers">
@@ -391,24 +647,29 @@ function About({ onNext, onBack }) {
           </div>
 
 
-          {/* LANDSCAPE PHOTOS */}
-
           <div className="little-me-photos">
 
             <div className="little-me-photo little-me-photo-one">
+
               <img
                 src="/assets/images/me1.jpg"
                 alt="Somanit"
               />
+
               <span>♡</span>
+
             </div>
 
+
             <div className="little-me-photo little-me-photo-two">
+
               <img
                 src="/assets/images/me2.jpg"
                 alt="Somanit"
               />
+
               <span>✦</span>
+
             </div>
 
           </div>
@@ -424,7 +685,9 @@ function About({ onNext, onBack }) {
 
       <section className="about-end">
 
-        <span>✦</span>
+        <span>
+          ✦
+        </span>
 
         <p>
           END OF LEVEL 03
