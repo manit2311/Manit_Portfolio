@@ -110,7 +110,7 @@ function Profile({ onNext, onBack }) {
               <div className="education-item-text">
 
                 <h3>
-                  Cheasim Sonthirmuk High School
+                  Cheasim Sonthormuk High School
                 </h3>
 
                 <p className="education-date">

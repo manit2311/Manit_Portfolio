@@ -100,6 +100,7 @@ function Conclusion({ onBack, onStartAgain }) {
           A little collection of my journey,
           ideas, memories, and the things
           I'm still figuring out.
+          I'm always grateful in every experiences.
         </p>
 
         <div className="conclusion-divider">
