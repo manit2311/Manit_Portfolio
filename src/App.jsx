@@ -1,11 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import About from "./pages/About";
 import Conclusion from "./pages/Conclusion";
-
 import Decoration from "./components/Decoration";
 
 function App() {
@@ -19,10 +18,15 @@ function App() {
     setCurrentPage((page) => Math.max(page - 1, 1));
   };
 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "auto",
+    });
+  }, [currentPage]);
+
   return (
     <main className="app">
-
-      {/* Floating bubbles appear across the whole portfolio */}
       <Decoration />
 
       {currentPage === 1 && (
@@ -50,7 +54,6 @@ function App() {
           onStartAgain={() => setCurrentPage(1)}
         />
       )}
-
     </main>
   );
 }
