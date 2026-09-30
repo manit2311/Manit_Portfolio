@@ -162,12 +162,10 @@ function Profile({ onNext, onBack }) {
                   </li>
 
                   <li>
-                    Year 1 GPA: 3.69/4.00
+                    Average GPA: 3.57/4.00
                   </li>
 
-                  <li>
-                    Year 2 GPA:
-                  </li>
+                
                 </ul>
 
               </div>
