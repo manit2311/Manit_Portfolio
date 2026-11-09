@@ -4,7 +4,7 @@ function Profile({ onNext, onBack }) {
   return (
     <section className="profile-page">
 
-      {/* ==================== INTRO ==================== */}
+      {/* INTRO */}
       <section className="profile-intro">
 
         <div className="profile-intro-decoration profile-star">✦</div>
@@ -13,17 +13,26 @@ function Profile({ onNext, onBack }) {
 
         <div className="profile-intro-content">
 
-          <div className="profile-cover-card">
-            <div className="profile-window-bar">
-              <span></span>
-              <span></span>
-              <span></span>
+          <div className="profile-cover-wrapper">
+            <div className="profile-cover-card">
+
+              <div className="profile-window-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+                <small>MY PROFILE.JPG</small>
+              </div>
+
+              <img
+                src="/assets/images/cover.jpg"
+                alt="Somanit Vonchhay"
+              />
+
             </div>
 
-            <img
-              src="/assets/images/cover.jpg"
-              alt="Somanit Vonchhay"
-            />
+            <span className="profile-photo-caption">
+              ✦ PLAYER 01
+            </span>
           </div>
 
           <div className="profile-intro-text">
@@ -50,6 +59,11 @@ function Profile({ onNext, onBack }) {
               <span>CREATIVE</span>
             </div>
 
+            <div className="profile-intro-note">
+              <span>♡</span>
+              A COLLECTION OF MY JOURNEY, LEARNING &amp; PROJECTS
+            </div>
+
           </div>
         </div>
 
@@ -60,7 +74,7 @@ function Profile({ onNext, onBack }) {
       </section>
 
 
-      {/* ==================== EDUCATION ==================== */}
+      {/* EDUCATION */}
       <section
         id="education"
         className="profile-section education-section"
@@ -75,39 +89,42 @@ function Profile({ onNext, onBack }) {
           </div>
         </div>
 
-
         <div className="education-layout">
 
-          {/* UNIVERSITY PHOTOS */}
           <div className="education-photos">
 
-            <div className="education-photo">
+            <div className="education-photo education-photo-one">
               <img
                 src="/assets/images/university2.jpg"
                 alt="Royal University of Phnom Penh"
               />
+              <span>UNIVERSITY LIFE</span>
             </div>
 
-            <div className="education-photo">
+            <div className="education-photo education-photo-two">
               <img
                 src="/assets/images/university1.jpg"
                 alt="Royal University of Phnom Penh"
               />
             </div>
 
+            <div className="education-photo-note">
+              ✦ LEARNING NEVER STOPS
+            </div>
+
           </div>
 
-
-          {/* EDUCATION CONTENT */}
           <div className="education-content">
 
             <article className="education-item">
 
-              <div className="education-marker">
-                01
-              </div>
+              <div className="education-marker">01</div>
 
               <div className="education-item-text">
+
+                <span className="education-category">
+                  HIGH SCHOOL
+                </span>
 
                 <h3>
                   Cheasim Sonthormuk High School
@@ -138,11 +155,13 @@ function Profile({ onNext, onBack }) {
 
             <article className="education-item">
 
-              <div className="education-marker">
-                02
-              </div>
+              <div className="education-marker">02</div>
 
               <div className="education-item-text">
+
+                <span className="education-category">
+                  UNIVERSITY
+                </span>
 
                 <h3>
                   Royal University of Phnom Penh
@@ -164,8 +183,6 @@ function Profile({ onNext, onBack }) {
                   <li>
                     Average GPA: 3.57/4.00
                   </li>
-
-                
                 </ul>
 
               </div>
@@ -179,7 +196,7 @@ function Profile({ onNext, onBack }) {
       </section>
 
 
-      {/* ==================== SCHOLARSHIPS ==================== */}
+      {/* SCHOLARSHIPS */}
       <section
         id="scholarships"
         className="profile-section scholarships-section"
@@ -187,9 +204,7 @@ function Profile({ onNext, onBack }) {
 
         <div className="profile-section-heading">
 
-          <span className="profile-section-number">
-            02
-          </span>
+          <span className="profile-section-number">02</span>
 
           <div>
             <p>ACHIEVEMENTS</p>
@@ -198,18 +213,15 @@ function Profile({ onNext, onBack }) {
 
         </div>
 
-
         <div className="scholarship-layout">
 
           <div className="scholarship-content">
 
             <article className="scholarship-item">
-
-              <span className="scholarship-icon">
-                ◇
-              </span>
+              <span className="scholarship-icon">◇</span>
 
               <div>
+                <span className="scholarship-number">01 / AWARD</span>
                 <h3>CBC Scholarship</h3>
 
                 <p>
@@ -220,17 +232,14 @@ function Profile({ onNext, onBack }) {
                   Top 9 in Data Science entrance examination.
                 </small>
               </div>
-
             </article>
 
 
             <article className="scholarship-item">
-
-              <span className="scholarship-icon">
-                ◇
-              </span>
+              <span className="scholarship-icon">◇</span>
 
               <div>
+                <span className="scholarship-number">02 / AWARD</span>
                 <h3>Techo Digital Scholarship</h3>
 
                 <p>
@@ -241,20 +250,15 @@ function Profile({ onNext, onBack }) {
                   Full Bachelor's scholarship recipient.
                 </small>
               </div>
-
             </article>
 
 
             <article className="scholarship-item">
-
-              <span className="scholarship-icon">
-                ◇
-              </span>
+              <span className="scholarship-icon">◇</span>
 
               <div>
-                <h3>
-                  Royal University of Fine Arts
-                </h3>
+                <span className="scholarship-number">03 / AWARD</span>
+                <h3>Royal University of Fine Arts</h3>
 
                 <p>
                   Faculty of Music — Department of Historical Music
@@ -264,33 +268,44 @@ function Profile({ onNext, onBack }) {
                   Top 1 in scholarship selection based on high-school academic ranking.
                 </small>
               </div>
-
             </article>
 
           </div>
 
 
-          <div className="scholarship-photos">
+          <div className="scholarship-photo-area">
 
-            <div className="scholarship-photo scholarship-photo-1">
-              <img
-                src="/assets/images/scholarship1.jpg"
-                alt="CBC Scholarship"
-              />
+            <div className="scholarship-photo-label">
+              LITTLE MOMENTS OF ACHIEVEMENT ✦
             </div>
 
-            <div className="scholarship-photo scholarship-photo-2">
-              <img
-                src="/assets/images/scholarship2.jpg"
-                alt="Scholarship"
-              />
+            <div className="scholarship-photos">
+
+              <div className="scholarship-photo scholarship-photo-1">
+                <img
+                  src="/assets/images/scholarship1.jpg"
+                  alt="CBC Scholarship"
+                />
+              </div>
+
+              <div className="scholarship-photo scholarship-photo-2">
+                <img
+                  src="/assets/images/scholarship2.jpg"
+                  alt="Scholarship"
+                />
+              </div>
+
+              <div className="scholarship-photo scholarship-photo-3">
+                <img
+                  src="/assets/images/scholarship3.jpg"
+                  alt="Scholarship"
+                />
+              </div>
+
             </div>
 
-            <div className="scholarship-photo scholarship-photo-3">
-              <img
-                src="/assets/images/scholarship3.jpg"
-                alt="Scholarship"
-              />
+            <div className="scholarship-photo-note">
+              ♡ EVERY MILESTONE MATTERS
             </div>
 
           </div>
@@ -300,7 +315,7 @@ function Profile({ onNext, onBack }) {
       </section>
 
 
-      {/* ==================== PROJECTS ==================== */}
+      {/* PROJECTS */}
       <section
         id="projects"
         className="profile-section projects-section"
@@ -308,9 +323,7 @@ function Profile({ onNext, onBack }) {
 
         <div className="profile-section-heading">
 
-          <span className="profile-section-number">
-            03
-          </span>
+          <span className="profile-section-number">03</span>
 
           <div>
             <p>WHAT I BUILD</p>
@@ -319,17 +332,28 @@ function Profile({ onNext, onBack }) {
 
         </div>
 
+        <div className="projects-intro">
+          <span>✦</span>
+          A FEW THINGS I'VE BUILT, EXPLORED &amp; LEARNED FROM
+        </div>
+
 
         <div className="projects-list">
 
           {/* LISTÉ */}
           <article className="project-item project-item-left">
 
-            <div className="project-image">
+            <div className="project-image project-image-one">
+              <span className="project-image-number">01</span>
+
               <img
                 src="/assets/images/Listé.jpg"
                 alt="Listé inventory management system"
               />
+
+              <span className="project-image-caption">
+                WEB DEVELOPMENT
+              </span>
             </div>
 
             <div className="project-content">
@@ -348,18 +372,15 @@ function Profile({ onNext, onBack }) {
               <a
                 href="https://listeee.vercel.app"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="project-button"
               >
                 VIEW PROJECT →
               </a>
 
-
-              {/* DEMO ACCOUNTS */}
               <div className="demo-accounts">
 
                 <h4>DEMO ACCOUNTS</h4>
-
 
                 <div className="demo-account">
 
@@ -375,7 +396,6 @@ function Profile({ onNext, onBack }) {
 
                 </div>
 
-
                 <div className="demo-account">
 
                   <div className="demo-account-info">
@@ -389,7 +409,6 @@ function Profile({ onNext, onBack }) {
                   </div>
 
                 </div>
-
 
                 <div className="demo-account">
 
@@ -415,11 +434,17 @@ function Profile({ onNext, onBack }) {
           {/* PHNOM PENH TOURISM */}
           <article className="project-item project-item-right">
 
-            <div className="project-image">
+            <div className="project-image project-image-two">
+              <span className="project-image-number">02</span>
+
               <img
                 src="/assets/images/khmer_tourism_system.jpg"
                 alt="Phnom Penh Tourism System"
               />
+
+              <span className="project-image-caption">
+                SYSTEM DEVELOPMENT
+              </span>
             </div>
 
             <div className="project-content">
@@ -447,6 +472,7 @@ function Profile({ onNext, onBack }) {
               <button
                 type="button"
                 className="project-button project-button-disabled"
+                disabled
               >
                 LINK COMING SOON →
               </button>
@@ -459,11 +485,17 @@ function Profile({ onNext, onBack }) {
           {/* IRRIGATION */}
           <article className="project-item project-item-left">
 
-            <div className="project-image">
+            <div className="project-image project-image-three">
+              <span className="project-image-number">03</span>
+
               <img
                 src="/assets/images/irrigation_system.jpg"
                 alt="Mini Smart Irrigation System"
               />
+
+              <span className="project-image-caption">
+                HARDWARE &amp; IOT
+              </span>
             </div>
 
             <div className="project-content">
@@ -477,7 +509,7 @@ function Profile({ onNext, onBack }) {
               </h3>
 
               <p>
-                A mini irrigation system designed to help water water spinach
+                A mini irrigation system designed to help water spinach
                 automatically based on environmental conditions.
               </p>
 
@@ -503,7 +535,7 @@ function Profile({ onNext, onBack }) {
       </section>
 
 
-      {/* ==================== END ==================== */}
+      {/* END */}
       <section className="profile-end">
 
         <span>✦</span>
@@ -516,10 +548,14 @@ function Profile({ onNext, onBack }) {
           MORE TO COME ♡
         </h2>
 
+        <div className="profile-end-decoration">
+          ✧ ───── ♡ ───── ✧
+        </div>
+
       </section>
 
 
-      {/* ==================== NAVIGATION ==================== */}
+      {/* NAVIGATION */}
       <div className="profile-navigation">
 
         <button

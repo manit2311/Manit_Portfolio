@@ -1,15 +1,18 @@
 /* =========================================================
    PROFILE PAGE
-   Page 2 ONLY
+   Digital Scrapbook × Soft Game World
 ========================================================= */
 
 .profile-page {
   position: relative;
   z-index: 1;
+
   width: 100%;
   min-height: 100vh;
+
   background: #fff8df;
   color: #4a4054;
+
   overflow: hidden;
 }
 
@@ -20,8 +23,11 @@
 
 .profile-intro {
   position: relative;
+
   min-height: 100svh;
-  padding: 90px 7vw 110px;
+
+  padding: 85px 7vw 110px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,41 +36,69 @@
 .profile-intro-content {
   width: min(1180px, 100%);
   margin: 0 auto;
+
   display: grid;
-  grid-template-columns: minmax(380px, 1fr) minmax(380px, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
   align-items: center;
-  gap: 80px;
+  gap: clamp(50px, 7vw, 90px);
 }
 
 
 /* COVER PHOTO */
 
-.profile-cover-card {
+.profile-cover-wrapper {
   position: relative;
   width: 100%;
   max-width: 570px;
   margin: auto;
+}
+
+.profile-cover-card {
+  position: relative;
+
+  width: 100%;
   padding: 12px;
+
   background: white;
+
   border: 3px solid #4a4054;
+
   box-shadow: 12px 12px 0 #f5a6c9;
+
   transform: rotate(-2deg);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.profile-cover-card:hover {
+  transform: rotate(0deg) translateY(-4px);
+
+  box-shadow: 16px 16px 0 #b7a5e8;
 }
 
 .profile-window-bar {
-  height: 26px;
+  height: 28px;
+
   display: flex;
   align-items: center;
   gap: 7px;
+
   padding: 0 8px;
+
   background: #eee9ff;
+
   border-bottom: 2px solid #4a4054;
 }
 
 .profile-window-bar span {
   width: 9px;
   height: 9px;
+
   border-radius: 50%;
+
   background: #f5a6c9;
 }
 
@@ -76,11 +110,44 @@
   background: #9ddbea;
 }
 
+.profile-window-bar small {
+  margin-left: auto;
+
+  font-family: "Press Start 2P", monospace;
+  font-size: 5px;
+
+  color: #665b70;
+}
+
 .profile-cover-card img {
   width: 100%;
+
+  /* Keep original landscape photo proportions */
   aspect-ratio: 16 / 10;
+
   display: block;
+
   object-fit: cover;
+}
+
+.profile-photo-caption {
+  position: absolute;
+
+  right: -8px;
+  bottom: -28px;
+
+  padding: 8px 13px;
+
+  background: #f5dd83;
+
+  border: 1.5px solid #4a4054;
+
+  color: #4a4054;
+
+  font-family: "Press Start 2P", monospace;
+  font-size: 6px;
+
+  transform: rotate(3deg);
 }
 
 
@@ -91,28 +158,36 @@
 }
 
 .profile-level-label {
-  margin: 0 0 18px;
+  margin: 0 0 20px;
+
   font-family: "Press Start 2P", monospace;
-  font-size: 10px;
-  line-height: 1.7;
+  font-size: 9px;
+  line-height: 1.8;
+
   color: #665b70;
 }
 
 .profile-intro-text h1 {
   margin: 0;
+
   font-family: "Fredoka", sans-serif;
   font-size: clamp(60px, 7vw, 105px);
-  line-height: 0.88;
+
+  line-height: 0.9;
   letter-spacing: -3px;
+
   color: #4a4054;
 }
 
 .profile-role {
-  margin: 28px 0 24px;
+  margin: 27px 0 24px;
+
   font-family: "Quicksand", sans-serif;
   font-size: clamp(17px, 1.6vw, 22px);
   font-weight: 700;
+
   line-height: 1.5;
+
   color: #665b70;
 }
 
@@ -123,11 +198,17 @@
 }
 
 .profile-intro-tags span {
-  padding: 8px 14px;
+  padding: 9px 14px;
+
   border: 2px solid #4a4054;
+  border-radius: 8px;
+
   background: white;
+
   font-family: "Press Start 2P", monospace;
-  font-size: 8px;
+  font-size: 7px;
+
+  box-shadow: 3px 3px 0 rgba(74, 64, 84, 0.1);
 }
 
 .profile-intro-tags span:nth-child(1) {
@@ -142,26 +223,58 @@
   background: #e8f7ef;
 }
 
+.profile-intro-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  max-width: 100%;
+
+  margin-top: 29px;
+  padding: 12px 14px;
+
+  border: 1.5px dashed #b7a5e8;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.55);
+
+  color: #766982;
+
+  font-family: "Press Start 2P", monospace;
+  font-size: 6px;
+  line-height: 1.8;
+}
+
+.profile-intro-note span {
+  color: #f5a6c9;
+  font-size: 13px;
+}
+
 
 /* INTRO DECORATIONS */
 
 .profile-intro-decoration {
   position: absolute;
+
   font-family: "Fredoka", sans-serif;
+
   pointer-events: none;
 }
 
 .profile-star {
   top: 15%;
   left: 4%;
+
   font-size: 38px;
   color: #f5a6c9;
+
   transform: rotate(-15deg);
 }
 
 .profile-plus {
   right: 6%;
   top: 23%;
+
   font-size: 50px;
   color: #b7a5e8;
 }
@@ -169,19 +282,26 @@
 .profile-sparkle {
   right: 11%;
   bottom: 23%;
+
   font-size: 34px;
   color: #9ddbea;
 }
 
 .profile-scroll-message {
   position: absolute;
-  bottom: 45px;
+
+  bottom: 42px;
   left: 50%;
+
   transform: translateX(-50%);
+
   font-family: "Press Start 2P", monospace;
-  font-size: 9px;
+  font-size: 8px;
+
   color: #665b70;
+
   white-space: nowrap;
+
   animation: scrollHint 1.8s ease-in-out infinite;
 }
 
@@ -215,42 +335,58 @@
 
 .profile-section {
   width: min(1240px, calc(100% - 10vw));
+
   margin: 0 auto;
-  padding: 110px 0;
+
+  padding: 105px 0;
 }
 
 .profile-section-heading {
   display: flex;
   align-items: flex-start;
   gap: 22px;
-  margin-bottom: 65px;
+
+  margin-bottom: 55px;
 }
 
 .profile-section-number {
+  flex-shrink: 0;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   min-width: 64px;
   height: 64px;
+
   border-radius: 18px;
+
   background: #eee9ff;
   color: #4a4054;
+
   font-family: "Press Start 2P", monospace;
   font-size: 11px;
+
+  box-shadow: 4px 4px 0 rgba(74, 64, 84, 0.1);
 }
 
 .profile-section-heading p {
-  margin: 3px 0 4px;
+  margin: 3px 0 6px;
+
   font-family: "Press Start 2P", monospace;
-  font-size: 9px;
+  font-size: 8px;
+
   color: #665b70;
 }
 
 .profile-section-heading h2 {
   margin: 0;
+
   font-family: "Fredoka", sans-serif;
   font-size: clamp(42px, 5vw, 70px);
+
   line-height: 0.95;
+
   color: #4a4054;
 }
 
@@ -260,99 +396,204 @@
 ========================================================= */
 
 .education-section {
-  min-height: 100vh;
+  position: relative;
+}
+
+.education-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.2fr);
+
+  align-items: center;
+  gap: clamp(35px, 5vw, 75px);
 }
 
 
-/* PHOTO AREA */
+/* Education photos */
 
 .education-photos {
+  position: relative;
+
+  min-height: 490px;
+
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
-  gap: 28px;
-  margin-bottom: 70px;
 }
 
 .education-photo {
-  width: clamp(190px, 19vw, 255px);
-  aspect-ratio: 3 / 4;
+  position: absolute;
+
+  width: min(245px, 75%);
+
   padding: 10px;
+
   background: white;
+
   border: 2px solid #4a4054;
+
   box-shadow: 9px 9px 0 rgba(74, 64, 84, 0.13);
-}
-
-.education-photo:nth-child(1) {
-  transform: rotate(-3deg);
-}
-
-.education-photo:nth-child(2) {
-  transform: rotate(3deg);
 }
 
 .education-photo img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 3 / 4;
+
   display: block;
+
   object-fit: cover;
 }
 
+.education-photo-one {
+  top: 20px;
+  left: 2%;
 
-/* EDUCATION TEXT */
+  transform: rotate(-5deg);
+  z-index: 2;
+}
+
+.education-photo-two {
+  right: 0;
+  bottom: 25px;
+
+  transform: rotate(5deg);
+  z-index: 1;
+}
+
+.education-photo-one span {
+  display: block;
+
+  padding: 9px 4px 2px;
+
+  text-align: center;
+
+  font-family: "Press Start 2P", monospace;
+  font-size: 5px;
+
+  color: #665b70;
+}
+
+.education-photo-note {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  padding: 9px 12px;
+
+  border: 1.5px dashed #b7a5e8;
+  border-radius: 8px;
+
+  background: white;
+
+  font-family: "Press Start 2P", monospace;
+  font-size: 5px;
+
+  color: #766982;
+
+  transform: rotate(-3deg);
+}
+
+
+/* Education cards */
 
 .education-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .education-item {
   display: flex;
-  gap: 22px;
-  padding: 30px;
-  background: rgba(255, 255, 255, 0.52);
-  border: 2px solid rgba(74, 64, 84, 0.14);
-  border-radius: 22px;
+  align-items: flex-start;
+  gap: 20px;
+
+  padding: 27px;
+
+  background: rgba(255, 255, 255, 0.68);
+
+  border: 2px solid rgba(74, 64, 84, 0.15);
+  border-radius: 20px;
+
+  box-shadow: 5px 5px 0 rgba(74, 64, 84, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 7px 8px 0 rgba(74, 64, 84, 0.1);
 }
 
 .education-marker {
   flex-shrink: 0;
-  width: 50px;
-  height: 50px;
+
+  width: 48px;
+  height: 48px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 15px;
+
+  border-radius: 14px;
+
   background: #ffe8f2;
+
   font-family: "Press Start 2P", monospace;
-  font-size: 9px;
+  font-size: 8px;
+}
+
+.education-item:nth-child(2) .education-marker {
+  background: #e9f9fd;
+}
+
+.education-category {
+  display: inline-block;
+
+  margin-bottom: 9px;
+
+  font-family: "Press Start 2P", monospace;
+  font-size: 6px;
+
+  color: #9b87d4;
 }
 
 .education-item-text h3 {
-  margin: 0 0 8px;
+  margin: 0 0 9px;
+
   font-family: "Fredoka", sans-serif;
-  font-size: 26px;
+  font-size: 25px;
+
   line-height: 1.15;
+
   color: #4a4054;
 }
 
 .education-date {
-  margin: 0 0 16px;
-  font-size: 14px;
+  margin: 0 0 15px;
+
+  font-size: 13px;
   font-weight: 700;
+
+  line-height: 1.6;
+
   color: #665b70;
 }
 
 .education-item ul {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 19px;
 }
 
 .education-item li {
-  margin-bottom: 9px;
-  font-size: 14px;
-  line-height: 1.55;
+  margin-bottom: 8px;
+
+  font-size: 13px;
+  line-height: 1.6;
+
+  color: #665b70;
 }
 
 .education-item li::marker {
@@ -365,98 +606,206 @@
 ========================================================= */
 
 .scholarships-section {
-  min-height: 100vh;
+  position: relative;
 }
 
 .scholarship-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
   align-items: center;
+  gap: 65px;
 }
 
 .scholarship-content {
   display: flex;
   flex-direction: column;
-  gap: 42px;
+  gap: 34px;
 }
 
 .scholarship-item {
   display: flex;
-  gap: 18px;
   align-items: flex-start;
+  gap: 18px;
+
+  padding: 19px;
+
+  background: rgba(255, 255, 255, 0.6);
+
+  border: 1.5px solid rgba(74, 64, 84, 0.12);
+  border-radius: 16px;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.scholarship-item:hover {
+  transform: translateX(5px);
+  background: white;
 }
 
 .scholarship-icon {
   flex-shrink: 0;
+
   color: #f5a6c9;
-  font-size: 27px;
+
+  font-size: 29px;
   line-height: 1;
 }
 
+.scholarship-number {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-family: "Press Start 2P", monospace;
+  font-size: 6px;
+
+  color: #9b87d4;
+}
+
 .scholarship-item h3 {
-  margin: 0 0 6px;
+  margin: 0 0 7px;
+
   font-family: "Fredoka", sans-serif;
-  font-size: 25px;
+  font-size: 24px;
+
   color: #4a4054;
 }
 
 .scholarship-item p {
   margin: 0 0 7px;
-  font-size: 15px;
+
+  font-size: 14px;
   font-weight: 700;
+
+  line-height: 1.5;
+
   color: #665b70;
 }
 
 .scholarship-item small {
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 13px;
+  line-height: 1.6;
+
   color: #665b70;
 }
 
 
-/* SCHOLARSHIP PHOTOS */
+/* Scholarship photo collage */
+
+.scholarship-photo-area {
+  position: relative;
+  min-width: 0;
+}
+
+.scholarship-photo-label {
+  display: inline-block;
+
+  margin-bottom: 12px;
+  padding: 9px 12px;
+
+  border: 1.5px dashed #b7a5e8;
+  border-radius: 8px;
+
+  background: white;
+
+  font-family: "Press Start 2P", monospace;
+  font-size: 6px;
+
+  color: #665b70;
+
+  transform: rotate(-2deg);
+}
 
 .scholarship-photos {
   position: relative;
-  min-height: 570px;
+  min-height: 530px;
 }
 
 .scholarship-photo {
   position: absolute;
+
   width: 190px;
+
   padding: 9px;
+
   background: white;
+
   border: 2px solid #4a4054;
+
   box-shadow: 8px 8px 0 rgba(74, 64, 84, 0.12);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.scholarship-photo:hover {
+  z-index: 5;
+
+  transform: rotate(0deg) scale(1.04);
+
+  box-shadow: 12px 12px 0 rgba(74, 64, 84, 0.15);
 }
 
 .scholarship-photo img {
   width: 100%;
+
   display: block;
+
   aspect-ratio: 3 / 4;
+
   object-fit: cover;
 }
 
 .scholarship-photo-1 {
-  top: 10px;
-  right: 15%;
+  top: 5px;
+  right: 14%;
+
   transform: rotate(-4deg);
+
   border-color: #a9dcc1;
 }
 
 .scholarship-photo-2 {
-  top: 210px;
-  left: 10%;
+  top: 190px;
+  left: 5%;
+
   transform: rotate(4deg);
+
   border-color: #f5dd83;
 }
 
 .scholarship-photo-3 {
   right: 0;
   bottom: 0;
+
   transform: rotate(5deg);
+
   border-color: #f5a6c9;
+}
+
+.scholarship-photo-note {
+  position: absolute;
+
+  right: 2px;
+  bottom: -17px;
+
+  padding: 8px 11px;
+
+  background: #ffe8f2;
+
+  border: 1.5px solid #4a4054;
+  border-radius: 8px;
+
+  font-family: "Press Start 2P", monospace;
+  font-size: 5px;
+
+  color: #665b70;
+
+  transform: rotate(2deg);
 }
 
 
@@ -465,24 +814,46 @@
 ========================================================= */
 
 .projects-section {
-  min-height: 100vh;
+  position: relative;
+}
+
+.projects-intro {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: -25px 0 65px;
+
+  color: #766982;
+
+  font-family: "Press Start 2P", monospace;
+  font-size: 6px;
+  line-height: 1.8;
+}
+
+.projects-intro span {
+  color: #f5a6c9;
+  font-size: 15px;
 }
 
 .projects-list {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 105px;
 }
 
 .project-item {
   display: grid;
-  grid-template-columns: minmax(330px, 0.95fr) minmax(330px, 1fr);
-  gap: 70px;
+
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr);
+
+  gap: clamp(35px, 5vw, 70px);
+
   align-items: center;
 }
 
 .project-item-right {
-  grid-template-columns: minmax(330px, 1fr) minmax(330px, 0.95fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr);
 }
 
 .project-item-right .project-image {
@@ -494,47 +865,122 @@
 }
 
 
-/* PROJECT IMAGE */
+/* Project image */
 
 .project-image {
   position: relative;
+
+  min-width: 0;
+
   padding: 12px;
+
   background: white;
+
   border: 2px solid #4a4054;
+
   box-shadow: 11px 11px 0 rgba(74, 64, 84, 0.12);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-item-left .project-image {
+  transform: rotate(-1deg);
+}
+
+.project-item-right .project-image {
+  transform: rotate(1deg);
+}
+
+.project-image:hover {
+  transform: rotate(0deg) translateY(-4px);
+
+  box-shadow: 14px 14px 0 #f5a6c9;
 }
 
 .project-image img {
   width: 100%;
+
   display: block;
+
   aspect-ratio: 16 / 10;
+
   object-fit: cover;
 }
 
+.project-image-number {
+  position: absolute;
 
-/* PROJECT TEXT */
+  z-index: 2;
+  top: -17px;
+  left: -15px;
+
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #4a4054;
+  border-radius: 50%;
+
+  background: #f5dd83;
+
+  font-family: "Press Start 2P", monospace;
+  font-size: 8px;
+}
+
+.project-image-caption {
+  display: block;
+
+  padding: 10px 4px 2px;
+
+  text-align: center;
+
+  font-family: "Press Start 2P", monospace;
+  font-size: 6px;
+
+  color: #766982;
+}
+
+
+/* Project text */
+
+.project-content {
+  min-width: 0;
+}
 
 .project-type {
   display: inline-block;
+
   margin-bottom: 12px;
+
   font-family: "Press Start 2P", monospace;
-  font-size: 8px;
-  line-height: 1.6;
-  color: #665b70;
+  font-size: 7px;
+  line-height: 1.7;
+
+  color: #9b87d4;
 }
 
 .project-content h3 {
   margin: 0 0 16px;
+
   font-family: "Fredoka", sans-serif;
   font-size: clamp(32px, 3vw, 48px);
-  line-height: 1;
+
+  line-height: 1.05;
+
   color: #4a4054;
 }
 
 .project-content p {
   margin: 0 0 14px;
+
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.75;
+
   color: #665b70;
 }
 
@@ -542,25 +988,39 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 8px;
-  padding: 12px 17px;
+
+  margin-top: 10px;
+  padding: 13px 17px;
+
   border: 2px solid #4a4054;
+  border-radius: 9px;
+
   background: #ffe8f2;
+
   color: #4a4054;
+
   text-decoration: none;
+
   font-family: "Press Start 2P", monospace;
-  font-size: 8px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 7px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .project-button:hover {
   transform: translate(-3px, -3px);
+
   box-shadow: 5px 5px 0 #4a4054;
 }
 
 .project-button-disabled {
-  cursor: default;
   background: #eee9ff;
+  cursor: not-allowed;
+  opacity: 0.8;
 }
 
 .project-button-disabled:hover {
@@ -569,21 +1029,26 @@
 }
 
 
-/* ALGORITHM TAGS */
+/* Algorithm tags */
 
 .algorithm-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+
   margin-top: 20px;
 }
 
 .algorithm-tags span {
-  padding: 7px 10px;
+  padding: 8px 10px;
+
   background: #e9f9fd;
+
   border: 1px solid #4a4054;
+  border-radius: 6px;
+
   font-family: "Press Start 2P", monospace;
-  font-size: 7px;
+  font-size: 6px;
 }
 
 
@@ -594,15 +1059,19 @@
 .demo-accounts {
   margin-top: 25px;
   padding: 18px;
+
   background: #fdf1f6;
+
   border: 2px dashed #f5a6c9;
   border-radius: 15px;
 }
 
 .demo-accounts h4 {
-  margin: 0 0 15px;
+  margin: 0 0 13px;
+
   font-family: "Press Start 2P", monospace;
-  font-size: 8px;
+  font-size: 7px;
+
   color: #4a4054;
 }
 
@@ -610,8 +1079,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 18px;
+
+  gap: 15px;
+
   padding: 12px 0;
+
   border-bottom: 1px dashed rgba(74, 64, 84, 0.18);
 }
 
@@ -623,12 +1095,14 @@
 .demo-account-info {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 4px;
 }
 
 .demo-account-info strong {
   font-family: "Fredoka", sans-serif;
   font-size: 16px;
+
+  color: #4a4054;
 }
 
 .demo-account-info span {
@@ -640,21 +1114,26 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 3px;
+  gap: 5px;
 }
 
 .demo-password small {
   font-family: "Press Start 2P", monospace;
-  font-size: 6px;
+  font-size: 5px;
+
   color: #665b70;
 }
 
 .demo-password code {
-  padding: 5px 7px;
+  padding: 6px 8px;
+
   border-radius: 6px;
+
   background: white;
+
   font-family: monospace;
   font-size: 11px;
+
   color: #4a4054;
 }
 
@@ -664,12 +1143,17 @@
 ========================================================= */
 
 .profile-end {
+  position: relative;
+
   min-height: 55vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px 20px 160px;
+
+  padding: 90px 20px 160px;
+
   text-align: center;
 }
 
@@ -680,16 +1164,29 @@
 
 .profile-end p {
   margin: 20px 0 10px;
+
   font-family: "Press Start 2P", monospace;
-  font-size: 9px;
+  font-size: 8px;
+
   color: #665b70;
 }
 
 .profile-end h2 {
   margin: 0;
+
   font-family: "Fredoka", sans-serif;
   font-size: clamp(42px, 6vw, 75px);
+
   color: #4a4054;
+}
+
+.profile-end-decoration {
+  margin-top: 23px;
+
+  color: #b7a5e8;
+
+  font-size: 15px;
+  letter-spacing: 3px;
 }
 
 
@@ -700,8 +1197,10 @@
 .profile-navigation {
   position: fixed;
   z-index: 20;
+
   left: 50%;
   bottom: 18px;
+
   transform: translateX(-50%);
 
   width: min(500px, calc(100% - 30px));
@@ -709,11 +1208,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   gap: 15px;
 
   padding: 9px 12px;
 
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.93);
+
   border: 2px solid #4a4054;
   border-radius: 18px;
 
@@ -724,20 +1225,33 @@
 
 .profile-navigation button {
   border: none;
+  border-radius: 8px;
+
   background: transparent;
+
   color: #4a4054;
+
   font-family: "Press Start 2P", monospace;
-  font-size: 8px;
-  padding: 9px;
+  font-size: 7px;
+
+  padding: 10px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 .profile-navigation button:hover {
-  color: #f5a6c9;
+  background: #ffe8f2;
+  color: #d87fa6;
 }
 
 .profile-navigation span {
   font-family: "Press Start 2P", monospace;
-  font-size: 8px;
+  font-size: 7px;
+
   color: #665b70;
 }
 
@@ -746,15 +1260,17 @@
    TABLET
 ========================================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 
   .profile-intro {
-    padding: 70px 5vw 100px;
+    padding: 75px 5vw 105px;
   }
 
   .profile-intro-content {
     grid-template-columns: 1fr;
     gap: 55px;
+
+    max-width: 680px;
   }
 
   .profile-cover-card {
@@ -769,18 +1285,35 @@
     justify-content: center;
   }
 
-  .education-content {
+  .profile-intro-note {
+    justify-content: center;
+  }
+
+  .education-layout {
     grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .education-photos {
+    width: min(570px, 100%);
+    margin: 0 auto;
+  }
+
+  .education-photo {
+    width: min(240px, 45%);
   }
 
   .scholarship-layout {
     grid-template-columns: 1fr;
+    gap: 45px;
   }
 
   .scholarship-photos {
-    min-height: 530px;
-    max-width: 600px;
-    width: 100%;
+    min-height: 520px;
+  }
+
+  .scholarship-photo-area {
+    width: min(600px, 100%);
     margin: 0 auto;
   }
 
@@ -795,6 +1328,10 @@
     order: initial;
   }
 
+  .project-image {
+    width: min(680px, 100%);
+    margin: 0 auto;
+  }
 }
 
 
@@ -806,7 +1343,7 @@
 
   .profile-intro {
     min-height: auto;
-    padding: 55px 22px 100px;
+    padding: 55px 22px 85px;
   }
 
   .profile-intro-content {
@@ -816,6 +1353,10 @@
   .profile-cover-card {
     width: 94%;
     padding: 8px;
+  }
+
+  .profile-window-bar {
+    height: 24px;
   }
 
   .profile-intro-text h1 {
@@ -831,11 +1372,18 @@
     font-size: 7px;
   }
 
+  .profile-intro-note {
+    font-size: 5px;
+  }
+
   .profile-scroll-message {
     position: static;
     transform: none;
-    margin-top: 55px;
+
+    margin-top: 50px;
+
     text-align: center;
+
     white-space: normal;
     line-height: 1.8;
   }
@@ -843,18 +1391,21 @@
   .profile-star {
     left: 4%;
     top: 8%;
+
     font-size: 25px;
   }
 
   .profile-plus {
     right: 4%;
     top: 12%;
+
     font-size: 32px;
   }
 
   .profile-sparkle {
     right: 7%;
     bottom: 12%;
+
     font-size: 25px;
   }
 
@@ -863,61 +1414,81 @@
 
   .profile-section {
     width: calc(100% - 36px);
-    padding: 80px 0;
+    padding: 75px 0;
   }
 
   .profile-section-heading {
     gap: 14px;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 
   .profile-section-number {
-    min-width: 48px;
-    height: 48px;
-    border-radius: 14px;
+    min-width: 47px;
+    height: 47px;
+
+    border-radius: 13px;
+
     font-size: 8px;
   }
 
   .profile-section-heading p {
-    font-size: 7px;
+    font-size: 6px;
   }
 
   .profile-section-heading h2 {
-    font-size: 42px;
+    font-size: clamp(36px, 10vw, 44px);
   }
 
 
   /* EDUCATION */
 
+  .education-layout {
+    gap: 25px;
+  }
+
   .education-photos {
-    gap: 14px;
-    margin-bottom: 40px;
+    min-height: 390px;
   }
 
   .education-photo {
-    width: calc(50% - 7px);
+    width: 43%;
     padding: 7px;
   }
 
+  .education-photo-one {
+    top: 10px;
+  }
+
+  .education-photo-two {
+    bottom: 15px;
+  }
+
+  .education-photo-note {
+    font-size: 4px;
+  }
+
   .education-content {
-    gap: 20px;
+    gap: 17px;
   }
 
   .education-item {
-    padding: 20px;
-    gap: 14px;
-    border-radius: 18px;
+    padding: 19px;
+    gap: 13px;
+
+    border-radius: 16px;
   }
 
   .education-marker {
-    width: 40px;
-    height: 40px;
-    border-radius: 12px;
+    width: 38px;
+    height: 38px;
+
+    border-radius: 11px;
+
     font-size: 7px;
   }
 
   .education-item-text h3 {
-    font-size: 21px;
+    font-size: 20px;
   }
 
   .education-date {
@@ -925,41 +1496,82 @@
   }
 
   .education-item li {
-    font-size: 13px;
+    font-size: 12px;
   }
 
 
   /* SCHOLARSHIPS */
 
+  .scholarship-layout {
+    gap: 35px;
+  }
+
   .scholarship-content {
-    gap: 30px;
+    gap: 17px;
+  }
+
+  .scholarship-item {
+    padding: 16px;
+    gap: 13px;
   }
 
   .scholarship-item h3 {
-    font-size: 21px;
+    font-size: 20px;
   }
 
   .scholarship-item p,
   .scholarship-item small {
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  .scholarship-number {
+    font-size: 5px;
   }
 
   .scholarship-photos {
-    min-height: 470px;
+    min-height: 440px;
   }
 
   .scholarship-photo {
-    width: 145px;
+    width: 140px;
+    padding: 7px;
+  }
+
+  .scholarship-photo-1 {
+    right: 10%;
+  }
+
+  .scholarship-photo-2 {
+    top: 160px;
+    left: 2%;
+  }
+
+  .scholarship-photo-3 {
+    right: 0;
+  }
+
+  .scholarship-photo-label {
+    font-size: 5px;
+  }
+
+  .scholarship-photo-note {
+    font-size: 4px;
   }
 
 
   /* PROJECTS */
 
-  .projects-list {
-    gap: 70px;
+  .projects-intro {
+    margin: -15px 0 45px;
+    font-size: 5px;
   }
 
-  .project-item {
+  .projects-list {
+    gap: 75px;
+  }
+
+  .project-item,
+  .project-item-right {
     gap: 28px;
   }
 
@@ -975,13 +1587,25 @@
     padding: 8px;
   }
 
+  .project-type {
+    font-size: 6px;
+  }
+
+  .project-button {
+    font-size: 6px;
+  }
+
 
   /* DEMO ACCOUNTS */
+
+  .demo-accounts {
+    padding: 15px;
+  }
 
   .demo-account {
     align-items: flex-start;
     flex-direction: column;
-    gap: 7px;
+    gap: 8px;
   }
 
   .demo-password {
@@ -993,27 +1617,129 @@
 
   .profile-end {
     min-height: 45vh;
-    padding-bottom: 130px;
+    padding: 75px 20px 130px;
   }
 
   .profile-end h2 {
     font-size: 43px;
   }
 
+  .profile-end-decoration {
+    font-size: 12px;
+  }
 
-  /* NAV */
+
+  /* NAVIGATION */
 
   .profile-navigation {
     bottom: 10px;
+
     width: calc(100% - 20px);
+
     border-radius: 15px;
   }
 
   .profile-navigation button {
-    font-size: 7px;
+    font-size: 6px;
+    padding: 9px 6px;
   }
 
   .profile-navigation span {
-    font-size: 7px;
+    font-size: 6px;
   }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .profile-intro {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+
+  .profile-intro-text h1 {
+    font-size: 47px;
+  }
+
+  .profile-role {
+    font-size: 13px;
+  }
+
+  .profile-intro-tags span {
+    padding: 7px 10px;
+    font-size: 6px;
+  }
+
+  .profile-section {
+    width: calc(100% - 28px);
+  }
+
+  .education-photos {
+    min-height: 340px;
+  }
+
+  .education-photo {
+    width: 44%;
+  }
+
+  .education-item {
+    padding: 15px;
+  }
+
+  .education-item-text h3 {
+    font-size: 18px;
+  }
+
+  .scholarship-photo {
+    width: 125px;
+  }
+
+  .scholarship-photos {
+    min-height: 390px;
+  }
+
+  .project-content h3 {
+    font-size: 30px;
+  }
+
+  .demo-password code {
+    font-size: 10px;
+  }
+
+  .profile-end h2 {
+    font-size: 38px;
+  }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.profile-navigation button:focus-visible,
+.project-button:focus-visible {
+  outline: 3px solid #b7a5e8;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .profile-cover-card,
+  .education-item,
+  .scholarship-item,
+  .scholarship-photo,
+  .project-image {
+    transition: none;
+  }
+
+  .profile-scroll-message {
+    animation: none;
+  }
+
 }

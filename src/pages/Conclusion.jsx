@@ -37,24 +37,15 @@ function Conclusion({ onBack, onStartAgain }) {
   ];
 
   return (
-    <section className="conclusion-page">
+    <main className="conclusion-page">
+      {/* DECORATIONS */}
+      <span className="conclusion-deco deco-star-1">✦</span>
+      <span className="conclusion-deco deco-star-2">✧</span>
+      <span className="conclusion-deco deco-heart">♡</span>
+      <span className="conclusion-deco deco-plus">+</span>
 
-      {/* =================================================
-          PAGE DECORATION
-      ================================================= */}
-
-      <div className="conclusion-deco deco-star-1">✦</div>
-      <div className="conclusion-deco deco-star-2">✧</div>
-      <div className="conclusion-deco deco-heart">♡</div>
-      <div className="conclusion-deco deco-plus">+</div>
-
-
-      {/* =================================================
-          SMALL SCRAPBOOK PHOTO STAGE
-      ================================================= */}
-
-      <div className="conclusion-photo-stage">
-
+      {/* MEMORY BOARD */}
+      <section className="conclusion-photo-stage">
         <div className="photo-stage-label">
           MY LITTLE MEMORY BOARD
         </div>
@@ -62,7 +53,6 @@ function Conclusion({ onBack, onStartAgain }) {
         <div className="photo-stage-line" />
 
         <div className="conclusion-photo-field">
-
           {photos.map((photo, index) => (
             <div
               key={photo.src}
@@ -71,21 +61,15 @@ function Conclusion({ onBack, onStartAgain }) {
               <img
                 src={photo.src}
                 alt={`Somanit memory ${index + 1}`}
+                loading="eager"
               />
             </div>
           ))}
-
         </div>
+      </section>
 
-      </div>
-
-
-      {/* =================================================
-          CENTER MESSAGE — TOP LAYER
-      ================================================= */}
-
-      <div className="conclusion-center">
-
+      {/* THANK YOU CARD */}
+      <section className="conclusion-center">
         <span className="conclusion-kicker">
           ✦ LEVEL COMPLETE ✦
         </span>
@@ -100,7 +84,7 @@ function Conclusion({ onBack, onStartAgain }) {
           A little collection of my journey,
           ideas, memories, and the things
           I'm still figuring out.
-          I'm always grateful in every experiences.
+          I'm always grateful for every experience.
         </p>
 
         <div className="conclusion-divider">
@@ -118,16 +102,13 @@ function Conclusion({ onBack, onStartAgain }) {
         >
           ↻ START AGAIN
         </button>
+      </section>
 
-      </div>
-
-
-      {/* =================================================
-          NAVIGATION
-      ================================================= */}
-
-      <div className="conclusion-navigation">
-
+      {/* NAVIGATION */}
+      <nav
+        className="conclusion-navigation"
+        aria-label="Page navigation"
+      >
         <button
           type="button"
           onClick={onBack}
@@ -136,10 +117,8 @@ function Conclusion({ onBack, onStartAgain }) {
         </button>
 
         <span>04 / 04</span>
-
-      </div>
-
-    </section>
+      </nav>
+    </main>
   );
 }
 
