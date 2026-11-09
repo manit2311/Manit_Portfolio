@@ -97,7 +97,7 @@ function Home({ onEnter }) {
 
             <div className="home-photo">
               <img
-                src="/assets/images/cover.jpg"
+                src="/assets/images/cover1.png"
                 alt="Somanit"
               />
             </div>
